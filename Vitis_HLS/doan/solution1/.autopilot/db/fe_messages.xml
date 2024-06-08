@@ -1,0 +1,174 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/csynth.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="CNN" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=CNN" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="CNN_tb.cpp:14:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_0(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_0(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 1 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_0(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_0(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 10 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_1(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_1(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 27 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_1(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_1(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 36 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Max_Pool1D_0(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Max_Pool1D_0(float*, float*)" Callee-DebugLoc="File Pool.cpp Line 1 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_2(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_2(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 53 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_2(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_2(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 62 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_3(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_3(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 79 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_3(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_3(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 88 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Max_Pool1D_1(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Max_Pool1D_1(float*, float*)" Callee-DebugLoc="File Pool.cpp Line 23 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_4(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_4(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 105 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_4(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_4(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 114 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_5(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_5(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 131 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_5(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_5(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 140 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Max_Pool1D_2(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Max_Pool1D_2(float*, float*)" Callee-DebugLoc="File Pool.cpp Line 45 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_6(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_6(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 157 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_6(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_6(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 166 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Padding_Conv2D_7(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Padding_Conv2D_7(float*, float*)" Callee-DebugLoc="File Conv.cpp Line 183 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Conv1D_7(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Conv1D_7(float*, float*, float*, float*)" Callee-DebugLoc="File Conv.cpp Line 192 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Max_Pool1D_3(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Max_Pool1D_3(float*, float*)" Callee-DebugLoc="File Pool.cpp Line 67 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Global_Average_Pool1D_4(float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Global_Average_Pool1D_4(float*, float*)" Callee-DebugLoc="File Pool.cpp Line 89 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Dense_0(float*, float*, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Dense_0(float*, float*, float*, float*)" Callee-DebugLoc="File Dense.cpp Line 1 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Inlining function 'Dense_1(float*, float&amp;, float*, float*)' into 'CNN(float*, float&amp;, float*)'">
+        <args Callee="Dense_1(float*, float&amp;, float*, float*)" Callee-DebugLoc="File Dense.cpp Line 12 Column 0" Caller="CNN(float*, float&amp;, float*)" Caller-DebugLoc="File CNN.cpp Line 6 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Dense.cpp:18:3" msg_body="Loop 'loop_for_b_Dense_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_b_Dense_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Dense.cpp:6:3" msg_body="Loop 'loop_for_b_Dense_0' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_b_Dense_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:95:20" msg_body="Loop 'VITIS_LOOP_95_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_95_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:77:21" msg_body="Loop 'VITIS_LOOP_77_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_77_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:55:21" msg_body="Loop 'VITIS_LOOP_55_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_55_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:122:4" msg_body="Loop 'loop_for_fc_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:124:5" msg_body="Loop 'loop_for_fa_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:33:21" msg_body="Loop 'VITIS_LOOP_33_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_33_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:96:4" msg_body="Loop 'loop_for_fc_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:98:5" msg_body="Loop 'loop_for_fa_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:70:4" msg_body="Loop 'loop_for_fc_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:72:5" msg_body="Loop 'loop_for_fa_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Pool.cpp:11:21" msg_body="Loop 'VITIS_LOOP_11_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_11_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:44:4" msg_body="Loop 'loop_for_fc_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fc_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:46:5" msg_body="Loop 'loop_for_fa_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="Conv.cpp:20:5" msg_body="Loop 'loop_for_fa_0' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_for_fa_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_b_Dense_1' (Dense.cpp:18:3) in function 'CNN' completely with a factor of 20">
+        <args Factor="20" LoopLoc="Dense.cpp:18:3" LoopName="loop_for_b_Dense_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_b_Dense_0' (Dense.cpp:6:3) in function 'CNN' completely with a factor of 32">
+        <args Factor="32" LoopLoc="Dense.cpp:6:3" LoopName="loop_for_b_Dense_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_95_1' (Pool.cpp:95:20) in function 'CNN' completely with a factor of 32">
+        <args Factor="32" LoopLoc="Pool.cpp:95:20" LoopName="VITIS_LOOP_95_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_77_1' (Pool.cpp:77:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:77:21" LoopName="VITIS_LOOP_77_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_55_1' (Pool.cpp:55:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:55:21" LoopName="VITIS_LOOP_55_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fc_4' (Conv.cpp:122:4) in function 'CNN' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Conv.cpp:122:4" LoopName="loop_for_fc_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fa_4' (Conv.cpp:124:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:124:5" LoopName="loop_for_fa_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_33_1' (Pool.cpp:33:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:33:21" LoopName="VITIS_LOOP_33_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fc_3' (Conv.cpp:96:4) in function 'CNN' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Conv.cpp:96:4" LoopName="loop_for_fc_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fa_3' (Conv.cpp:98:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:98:5" LoopName="loop_for_fa_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fc_2' (Conv.cpp:70:4) in function 'CNN' completely with a factor of 4">
+        <args Factor="4" LoopLoc="Conv.cpp:70:4" LoopName="loop_for_fc_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fa_2' (Conv.cpp:72:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:72:5" LoopName="loop_for_fa_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_11_1' (Pool.cpp:11:21) in function 'CNN' completely with a factor of 2">
+        <args Factor="2" LoopLoc="Pool.cpp:11:21" LoopName="VITIS_LOOP_11_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fc_1' (Conv.cpp:44:4) in function 'CNN' completely with a factor of 4">
+        <args Factor="4" LoopLoc="Conv.cpp:44:4" LoopName="loop_for_fc_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fa_1' (Conv.cpp:46:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:46:5" LoopName="loop_for_fa_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="CNN.cpp:6:0" msg_body="Unrolling loop 'loop_for_fa_0' (Conv.cpp:20:5) in function 'CNN' completely with a factor of 5">
+        <args Factor="5" LoopLoc="Conv.cpp:20:5" LoopName="loop_for_fa_0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

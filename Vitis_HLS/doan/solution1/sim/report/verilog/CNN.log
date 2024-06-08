@@ -1,0 +1,438 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "F:/Vivado/Vitis_HLS/2023.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling CNN_tb.cpp_pre.cpp.tb.cpp
+   Compiling Conv.cpp_pre.cpp.tb.cpp
+   Compiling Dense.cpp_pre.cpp.tb.cpp
+   Compiling Pool.cpp_pre.cpp.tb.cpp
+   Compiling CNN.cpp_pre.cpp.tb.cpp
+   Compiling apatb_CNN.cpp
+   Compiling apatb_CNN_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\sim\verilog>set PATH= 
+
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\sim\verilog>call F:/Vivado/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_CNN_top glbl -Oenable_linking_all_libraries  -prj CNN.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s CNN -debug all 
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_CNN_top glbl -Oenable_linking_all_libraries -prj CNN.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s CNN -debug all 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/ip/xil_defaultlib/CNN_fadd_32ns_32ns_32_4_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fadd_32ns_32ns_32_4_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/ip/xil_defaultlib/CNN_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/ip/xil_defaultlib/CNN_fmul_32ns_32ns_32_3_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fmul_32ns_32ns_32_3_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/ip/xil_defaultlib/CNN_sitofp_32ns_32_4_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_sitofp_32ns_32_4_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/AESL_automem_InModel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_InModel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/AESL_automem_Weights.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Weights
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_CNN_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_detect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_a_Dense_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_a_Dense_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_a_Dense_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_a_Dense_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_gap_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_gap_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_pad_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_pad_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_fadd_32ns_32ns_32_4_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fadd_32ns_32ns_32_4_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_fmul_32ns_32ns_32_3_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_fmul_32ns_32ns_32_3_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mac_muladd_4ns_7ns_7ns_10_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_4ns_7ns_7ns_10_4_1_DSP48_1
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_4ns_7ns_7ns_10_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mac_muladd_4ns_8ns_8ns_11_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_4ns_8ns_8ns_11_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_4ns_8ns_8ns_11_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mac_muladd_5ns_6ns_6ns_10_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_5ns_6ns_6ns_10_4_1_DSP48_3
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_5ns_6ns_6ns_10_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mac_muladd_5ns_7ns_7ns_11_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_5ns_7ns_7ns_11_4_1_DSP48_2
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_5ns_7ns_7ns_11_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mac_muladd_6ns_6ns_6ns_11_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_6ns_6ns_6ns_11_4_1_DSP48_4
+INFO: [VRFC 10-311] analyzing module CNN_mac_muladd_6ns_6ns_6ns_11_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mul_3ns_10ns_10_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mul_3ns_10ns_10_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_mul_3ns_9ns_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_mul_3ns_9ns_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutConv0_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutConv0_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutConv1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutConv1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutDense0_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutDense0_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutGAP4_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutGAP4_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv0_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv0_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv1_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv1_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv2_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv2_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv3_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv3_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv4_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv4_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv5_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv5_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv6_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv6_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPadConv7_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPadConv7_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPool0_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPool0_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_OutPool3_RAM_1WNR_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_OutPool3_RAM_1WNR_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_out_Dense_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_out_Dense_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/CNN_sitofp_32ns_32_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CNN_sitofp_32ns_32_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_exp_table...
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_pkg
+Compiling package floating_point_v7_1_16.flt_utils
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_16.vt2mutils
+Compiling package floating_point_v7_1_16.vt2mcomps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.CNN_out_Dense_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPadConv0_RAM_1WNR_AUTO_1R...
+Compiling module xil_defaultlib.CNN_OutConv0_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPadConv1_RAM_1WNR_AUTO_1R...
+Compiling module xil_defaultlib.CNN_OutConv1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPool0_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPadConv2_RAM_1WNR_AUTO_1R...
+Compiling module xil_defaultlib.CNN_OutPadConv3_RAM_1WNR_AUTO_1R...
+Compiling module xil_defaultlib.CNN_OutPadConv4_RAM_1WNR_AUTO_1R...
+Compiling module xil_defaultlib.CNN_OutPadConv5_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPadConv6_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPadConv7_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutPool3_RAM_1WNR_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutGAP4_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_OutDense0_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.CNN_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_13_1...
+Compiling module xil_defaultlib.CNN_mul_3ns_10ns_10_1_1(NUM_STAG...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_39_1...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling module xil_defaultlib.CNN_mul_3ns_9ns_9_1_1(NUM_STAGE=...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_65_1...
+Compiling module xil_defaultlib.CNN_mac_muladd_4ns_8ns_8ns_11_4_...
+Compiling module xil_defaultlib.CNN_mac_muladd_4ns_8ns_8ns_11_4_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_91_1...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling module xil_defaultlib.CNN_mac_muladd_4ns_7ns_7ns_10_4_...
+Compiling module xil_defaultlib.CNN_mac_muladd_4ns_7ns_7ns_10_4_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_117_...
+Compiling module xil_defaultlib.CNN_mac_muladd_5ns_7ns_7ns_11_4_...
+Compiling module xil_defaultlib.CNN_mac_muladd_5ns_7ns_7ns_11_4_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_143_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling module xil_defaultlib.CNN_mac_muladd_5ns_6ns_6ns_10_4_...
+Compiling module xil_defaultlib.CNN_mac_muladd_5ns_6ns_6ns_10_4_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_169_...
+Compiling module xil_defaultlib.CNN_mac_muladd_6ns_6ns_6ns_11_4_...
+Compiling module xil_defaultlib.CNN_mac_muladd_6ns_6ns_6ns_11_4_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_3_chan...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_VITIS_LOOP_195_...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xck26-s...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_16.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=27)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_16.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare [\compare(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.CNN_fadd_32ns_32ns_32_4_full_dsp...
+Compiling module xil_defaultlib.CNN_fadd_32ns_32ns_32_4_full_dsp...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_channe...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_a_Dens...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_for_a_Dens...
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_16.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_16.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=32)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_16.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_16.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.CNN_sitofp_32ns_32_4_no_dsp_1_ip
+Compiling module xil_defaultlib.CNN_sitofp_32ns_32_4_no_dsp_1(NU...
+Compiling module xil_defaultlib.CNN_CNN_Pipeline_loop_detect
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_16.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_16.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_16.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.CNN_fmul_32ns_32ns_32_3_max_dsp_...
+Compiling module xil_defaultlib.CNN_fmul_32ns_32ns_32_3_max_dsp_...
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_16.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.CNN_fcmp_32ns_32ns_1_2_no_dsp_1_...
+Compiling module xil_defaultlib.CNN_fcmp_32ns_32ns_1_2_no_dsp_1
+Compiling module xil_defaultlib.CNN
+Compiling module xil_defaultlib.AESL_automem_InModel
+Compiling module xil_defaultlib.AESL_automem_Weights
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=21)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.upc_loop_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=17)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_CNN_top
+Compiling module work.glbl
+Built simulation snapshot CNN
+ECHO is off.
+ECHO is off.
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Sat Jun  1 21:37:46 2024...
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

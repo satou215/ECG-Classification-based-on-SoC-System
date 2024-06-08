@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T20:53:00.258+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T20:52:59.763+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T20:52:59.758+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T20:52:59.751+0700" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T21:38:46.269+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fmul_32ns_32ns_32_3_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T21:38:46.259+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fcmp_32ns_32ns_1_2_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T21:38:46.252+0700" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'CNN_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="doan" solutionName="solution1" date="2024-06-01T21:38:44.236+0700" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

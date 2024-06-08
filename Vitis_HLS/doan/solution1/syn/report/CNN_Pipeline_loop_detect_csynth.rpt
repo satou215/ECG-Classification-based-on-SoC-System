@@ -1,0 +1,176 @@
+
+
+================================================================
+== Vitis HLS Report for 'CNN_Pipeline_loop_detect'
+================================================================
+* Date:           Sat Jun  1 06:31:37 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        doan
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.073 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        8|        8|  80.000 ns|  80.000 ns|    8|    8|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- loop_detect  |        6|        6|         4|          1|          1|     4|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     184|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      63|    -|
+|Register         |        -|     -|     143|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     143|     247|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+---------------------------+---------+----+---+----+-----+
+    |            Instance            |           Module          | BRAM_18K| DSP| FF| LUT| URAM|
+    +--------------------------------+---------------------------+---------+----+---+----+-----+
+    |sitofp_32ns_32_4_no_dsp_1_U192  |sitofp_32ns_32_4_no_dsp_1  |        0|   0|  0|   0|    0|
+    +--------------------------------+---------------------------+---------+----+---+----+-----+
+    |Total                           |                           |        0|   0|  0|   0|    0|
+    +--------------------------------+---------------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln26_fu_121_p2     |         +|   0|  0|  10|           3|           1|
+    |and_ln27_1_fu_219_p2   |       and|   0|  0|   2|           1|           1|
+    |and_ln27_fu_213_p2     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln26_fu_110_p2    |      icmp|   0|  0|  10|           3|           3|
+    |icmp_ln27_1_fu_183_p2  |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_2_fu_195_p2  |      icmp|   0|  0|  15|           8|           2|
+    |icmp_ln27_3_fu_201_p2  |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln27_fu_177_p2    |      icmp|   0|  0|  15|           8|           2|
+    |or_ln27_1_fu_207_p2    |        or|   0|  0|   2|           1|           1|
+    |or_ln27_fu_189_p2      |        or|   0|  0|   2|           1|           1|
+    |maxindex_3_fu_233_p3   |    select|   0|  0|  32|           1|          32|
+    |select_ln27_fu_225_p3  |    select|   0|  0|  32|           1|          32|
+    |ap_enable_pp0          |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 184|          75|          80|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i                |   9|          2|    3|          6|
+    |ap_sig_allocacmp_maxindex_1_load  |   9|          2|   32|         64|
+    |conv6_i_fu_50                     |   9|          2|   32|         64|
+    |i_2_fu_54                         |   9|          2|    3|          6|
+    |maxindex_1_fu_46                  |   9|          2|   32|         64|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  63|         14|  104|        208|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |conv6_i_fu_50                     |  32|   0|   32|          0|
+    |i_2_fu_54                         |   3|   0|    3|          0|
+    |i_reg_275                         |   3|   0|    3|          0|
+    |icmp_ln26_reg_280                 |   1|   0|    1|          0|
+    |icmp_ln26_reg_280_pp0_iter1_reg   |   1|   0|    1|          0|
+    |maxindex_1_fu_46                  |  32|   0|   32|          0|
+    |maxindex_1_load_reg_294           |  32|   0|   32|          0|
+    |maxindex_2_reg_301                |  32|   0|   32|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 143|   0|  143|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+--------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |       Source Object      |    C Type    |
++----------------------+-----+-----+------------+--------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|grp_fu_1469_p_din0    |  out|   32|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|grp_fu_1469_p_din1    |  out|   32|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|grp_fu_1469_p_opcode  |  out|    5|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|grp_fu_1469_p_dout0   |   in|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|grp_fu_1469_p_ce      |  out|    1|  ap_ctrl_hs|  CNN_Pipeline_loop_detect|  return value|
+|maxindex              |   in|   32|     ap_none|                  maxindex|        scalar|
+|out_Dense_address0    |  out|    3|   ap_memory|                 out_Dense|         array|
+|out_Dense_ce0         |  out|    1|   ap_memory|                 out_Dense|         array|
+|out_Dense_q0          |   in|   32|   ap_memory|                 out_Dense|         array|
+|conv6_i_out           |  out|   32|      ap_vld|               conv6_i_out|       pointer|
+|conv6_i_out_ap_vld    |  out|    1|      ap_vld|               conv6_i_out|       pointer|
++----------------------+-----+-----+------------+--------------------------+--------------+
+

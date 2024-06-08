@@ -1,0 +1,356 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 19 1 9 7 16 22 8 15 18 12 2 11 20 6 5 21 17 10 13 23 3 14",
+    "file": "CNN.cpp",
+    "fileloc": 6,
+    "instructions": 109,
+    "name": "CNN",
+    "total_instructions": 1191
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 27,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_1",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "10": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 192,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_7",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "11": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 131,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_5",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "12": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 105,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_4",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "13": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Pool.cpp",
+    "fileloc": 67,
+    "instructions": 38,
+    "loads": {
+      "L": 1
+    },
+    "name": "Max_Pool1D_3",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "14": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "Dense.cpp",
+    "fileloc": 12,
+    "instructions": 60,
+    "loads": {
+      "L": 7
+    },
+    "name": "Dense_1",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 60
+  },
+  "15": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 88,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_3",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "16": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 53,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_2",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "17": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 183,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_7",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "18": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Pool.cpp",
+    "fileloc": 23,
+    "instructions": 38,
+    "loads": {
+      "L": 1
+    },
+    "name": "Max_Pool1D_1",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "19": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 10,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_0",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 114,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_4",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "20": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 140,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_5",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "21": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 166,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_6",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "22": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 62,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_2",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  },
+  "23": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "Pool.cpp",
+    "fileloc": 89,
+    "instructions": 27,
+    "loads": {
+      "L": 1
+    },
+    "name": "Global_Average_Pool1D_4",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 27
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "Dense.cpp",
+    "fileloc": 1,
+    "instructions": 43,
+    "loads": {
+      "L": 4
+    },
+    "name": "Dense_0",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 43
+  },
+  "4": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 1,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_0",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "5": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 157,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_6",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "6": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Pool.cpp",
+    "fileloc": 45,
+    "instructions": 38,
+    "loads": {
+      "L": 1
+    },
+    "name": "Max_Pool1D_2",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "7": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Pool.cpp",
+    "fileloc": 1,
+    "instructions": 38,
+    "loads": {
+      "L": 1
+    },
+    "name": "Max_Pool1D_0",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 38
+  },
+  "8": {
+    "basicblocks": 11,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 79,
+    "instructions": 35,
+    "loads": {
+      "L": 1
+    },
+    "name": "Padding_Conv2D_3",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 35
+  },
+  "9": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "Conv.cpp",
+    "fileloc": 36,
+    "instructions": 65,
+    "loads": {
+      "L": 4
+    },
+    "name": "Conv1D_1",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 65
+  }
+}

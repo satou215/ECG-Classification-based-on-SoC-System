@@ -1,0 +1,40 @@
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:171:2: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 4; n++){
+ ^~~
+ VITIS_LOOP_13_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:171:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:197:2: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 4; n++){
+ ^~~
+ VITIS_LOOP_39_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:197:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:223:2: warning: Added loop label VITIS_LOOP_65_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 8; n++){
+ ^~~
+ VITIS_LOOP_65_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:223:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:249:2: warning: Added loop label VITIS_LOOP_91_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 8; n++){
+ ^~~
+ VITIS_LOOP_91_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:249:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:275:2: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 16; n++){
+ ^~~
+ VITIS_LOOP_117_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:275:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:301:2: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 16; n++){
+ ^~~
+ VITIS_LOOP_143_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:301:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:327:2: warning: Added loop label VITIS_LOOP_169_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 32; n++){
+ ^~~
+ VITIS_LOOP_169_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:327:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:353:2: warning: Added loop label VITIS_LOOP_195_1:   [xilinx-label-all-loops]
+ for (int n = 0; n < 32; n++){
+ ^~~
+ VITIS_LOOP_195_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp:353:2: note: FIX-IT applied suggested code changes

@@ -1,0 +1,25 @@
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:169:4: warning: Added loop label VITIS_LOOP_11_1:   [xilinx-label-all-loops]
+   for (int j = 0; j < PoolSize; j++)
+   ^~~
+   VITIS_LOOP_11_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:169:4: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:191:4: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+   for (int j = 0; j < PoolSize; j++)
+   ^~~
+   VITIS_LOOP_33_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:191:4: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:213:4: warning: Added loop label VITIS_LOOP_55_1:   [xilinx-label-all-loops]
+   for (int j = 0; j < PoolSize; j++)
+   ^~~
+   VITIS_LOOP_55_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:213:4: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:235:4: warning: Added loop label VITIS_LOOP_77_1:   [xilinx-label-all-loops]
+   for (int j = 0; j < PoolSize; j++)
+   ^~~
+   VITIS_LOOP_77_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:235:4: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:253:3: warning: Added loop label VITIS_LOOP_95_1:   [xilinx-label-all-loops]
+  for (int j = 0; j < 32; j++)
+  ^~~
+  VITIS_LOOP_95_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp:253:3: note: FIX-IT applied suggested code changes

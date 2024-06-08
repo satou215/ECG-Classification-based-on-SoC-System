@@ -1,0 +1,1007 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 56.043 seconds; current allocated memory: 0.613 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.172 seconds; current allocated memory: 132.012 MB.
+INFO: [HLS 200-10] Analyzing design file 'CNN.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'CNN_tb.cpp' ... 
+WARNING: [HLS 207-1017] unknown pragma ignored (CNN_tb.cpp:14:9)
+INFO: [HLS 200-10] Analyzing design file 'Conv.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Dense.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'Pool.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 17.28 seconds; current allocated memory: 134.215 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,486 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,191 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 999 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 867 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 835 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 812 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,138 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,138 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,138 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,336 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,505 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_0(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_0(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_1(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_1(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Max_Pool1D_0(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_2(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_2(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_3(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_3(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Max_Pool1D_1(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_4(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_4(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_5(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_5(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Max_Pool1D_2(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_6(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_6(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Padding_Conv2D_7(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Conv1D_7(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Max_Pool1D_3(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Global_Average_Pool1D_4(float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Dense_0(float*, float*, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-178] Inlining function 'Dense_1(float*, float&, float*, float*)' into 'CNN(float*, float&, float*)' (CNN.cpp:6:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_0> at Conv.cpp:5:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_ap_0> at Conv.cpp:15:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_1> at Conv.cpp:31:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_ap_1> at Conv.cpp:41:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_weight_pool_0> at Pool.cpp:9:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_2> at Conv.cpp:57:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_ap_2> at Conv.cpp:67:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_3> at Conv.cpp:83:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_ap_3> at Conv.cpp:93:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_weight_pool_1> at Pool.cpp:31:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_4> at Conv.cpp:109:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_ap_4> at Conv.cpp:119:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_5> at Conv.cpp:135:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_fa_5> at Conv.cpp:150:5 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_weight_pool_2> at Pool.cpp:53:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_6> at Conv.cpp:161:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_fa_6> at Conv.cpp:176:5 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_pad_7> at Conv.cpp:187:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_fa_7> at Conv.cpp:202:5 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_weight_pool_3> at Pool.cpp:75:3 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_channel_gap_4> at Pool.cpp:92:2 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_a_Dense_0> at Dense.cpp:3:2 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_for_a_Dense_1> at Dense.cpp:15:2 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_detect> at Dense.cpp:26:2 
+INFO: [HLS 214-291] Loop 'loop_for_b_Dense_1' is marked as complete unroll implied by the pipeline pragma (Dense.cpp:18:3)
+INFO: [HLS 214-291] Loop 'loop_for_b_Dense_0' is marked as complete unroll implied by the pipeline pragma (Dense.cpp:6:3)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_95_1' is marked as complete unroll implied by the pipeline pragma (Pool.cpp:95:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_77_1' is marked as complete unroll implied by the pipeline pragma (Pool.cpp:77:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_55_1' is marked as complete unroll implied by the pipeline pragma (Pool.cpp:55:21)
+INFO: [HLS 214-291] Loop 'loop_for_fc_4' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:122:4)
+INFO: [HLS 214-291] Loop 'loop_for_fa_4' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:124:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_33_1' is marked as complete unroll implied by the pipeline pragma (Pool.cpp:33:21)
+INFO: [HLS 214-291] Loop 'loop_for_fc_3' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:96:4)
+INFO: [HLS 214-291] Loop 'loop_for_fa_3' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:98:5)
+INFO: [HLS 214-291] Loop 'loop_for_fc_2' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:70:4)
+INFO: [HLS 214-291] Loop 'loop_for_fa_2' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:72:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_11_1' is marked as complete unroll implied by the pipeline pragma (Pool.cpp:11:21)
+INFO: [HLS 214-291] Loop 'loop_for_fc_1' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:44:4)
+INFO: [HLS 214-291] Loop 'loop_for_fa_1' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:46:5)
+INFO: [HLS 214-291] Loop 'loop_for_fa_0' is marked as complete unroll implied by the pipeline pragma (Conv.cpp:20:5)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_b_Dense_1' (Dense.cpp:18:3) in function 'CNN' completely with a factor of 20 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_b_Dense_0' (Dense.cpp:6:3) in function 'CNN' completely with a factor of 32 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_95_1' (Pool.cpp:95:20) in function 'CNN' completely with a factor of 32 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_77_1' (Pool.cpp:77:21) in function 'CNN' completely with a factor of 2 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_1' (Pool.cpp:55:21) in function 'CNN' completely with a factor of 2 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fc_4' (Conv.cpp:122:4) in function 'CNN' completely with a factor of 8 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fa_4' (Conv.cpp:124:5) in function 'CNN' completely with a factor of 5 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_33_1' (Pool.cpp:33:21) in function 'CNN' completely with a factor of 2 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fc_3' (Conv.cpp:96:4) in function 'CNN' completely with a factor of 8 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fa_3' (Conv.cpp:98:5) in function 'CNN' completely with a factor of 5 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fc_2' (Conv.cpp:70:4) in function 'CNN' completely with a factor of 4 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fa_2' (Conv.cpp:72:5) in function 'CNN' completely with a factor of 5 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_1' (Pool.cpp:11:21) in function 'CNN' completely with a factor of 2 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fc_1' (Conv.cpp:44:4) in function 'CNN' completely with a factor of 4 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fa_1' (Conv.cpp:46:5) in function 'CNN' completely with a factor of 5 (CNN.cpp:6:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_for_fa_0' (Conv.cpp:20:5) in function 'CNN' completely with a factor of 5 (CNN.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.734 seconds; current allocated memory: 137.129 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.009 seconds; current allocated memory: 137.129 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.922 seconds; current allocated memory: 149.621 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 151.492 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:5:12) to (Conv.cpp:5:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:31:12) to (Conv.cpp:31:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:57:12) to (Conv.cpp:57:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:83:12) to (Conv.cpp:83:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:109:12) to (Conv.cpp:109:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:135:12) to (Conv.cpp:135:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:161:12) to (Conv.cpp:161:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Conv.cpp:187:12) to (Conv.cpp:187:3) in function 'CNN'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'CNN' (Dense.cpp:3:2)...35 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.935 seconds; current allocated memory: 181.652 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_13_1'(Conv.cpp:13:19) and 'loop_for_ap_0'(Conv.cpp:15:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_1'(Conv.cpp:29:2) and 'loop_for_channel_pad_1'(Conv.cpp:31:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_39_1'(Conv.cpp:39:19) and 'loop_for_ap_1'(Conv.cpp:41:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_channel_pool_0'(Pool.cpp:6:2) and 'loop_for_weight_pool_0'(Pool.cpp:9:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_2'(Conv.cpp:55:2) and 'loop_for_channel_pad_2'(Conv.cpp:57:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_65_1'(Conv.cpp:65:19) and 'loop_for_ap_2'(Conv.cpp:67:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_3'(Conv.cpp:81:2) and 'loop_for_channel_pad_3'(Conv.cpp:83:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_91_1'(Conv.cpp:91:19) and 'loop_for_ap_3'(Conv.cpp:93:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_channel_pool_1'(Pool.cpp:28:2) and 'loop_for_weight_pool_1'(Pool.cpp:31:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_4'(Conv.cpp:107:2) and 'loop_for_channel_pad_4'(Conv.cpp:109:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_117_1'(Conv.cpp:117:20) and 'loop_for_ap_4'(Conv.cpp:119:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_5'(Conv.cpp:133:2) and 'loop_for_channel_pad_5'(Conv.cpp:135:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_fc_5'(Conv.cpp:148:4) and 'loop_for_fa_5'(Conv.cpp:150:5) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_ap_5'(Conv.cpp:145:3) and 'loop_for_fc_5'(Conv.cpp:148:4) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_143_1'(Conv.cpp:143:20) and 'loop_for_ap_5'(Conv.cpp:145:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_channel_pool_2'(Pool.cpp:50:2) and 'loop_for_weight_pool_2'(Pool.cpp:53:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_6'(Conv.cpp:159:2) and 'loop_for_channel_pad_6'(Conv.cpp:161:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_fc_6'(Conv.cpp:174:4) and 'loop_for_fa_6'(Conv.cpp:176:5) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_ap_6'(Conv.cpp:171:3) and 'loop_for_fc_6'(Conv.cpp:174:4) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_169_1'(Conv.cpp:169:20) and 'loop_for_ap_6'(Conv.cpp:171:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_3_channel_pad_7'(Conv.cpp:185:2) and 'loop_for_channel_pad_7'(Conv.cpp:187:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_fc_7'(Conv.cpp:200:4) and 'loop_for_fa_7'(Conv.cpp:202:5) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_ap_7'(Conv.cpp:197:3) and 'loop_for_fc_7'(Conv.cpp:200:4) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_195_1'(Conv.cpp:195:20) and 'loop_for_ap_7'(Conv.cpp:197:3) in function 'CNN' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_for_channel_pool_3'(Pool.cpp:72:2) and 'loop_for_weight_pool_3'(Pool.cpp:75:3) in function 'CNN' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_13_1' (Conv.cpp:13:19) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_1' (Conv.cpp:29:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_39_1' (Conv.cpp:39:19) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_channel_pool_0' (Pool.cpp:6:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_2' (Conv.cpp:55:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_65_1' (Conv.cpp:65:19) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_3' (Conv.cpp:81:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_91_1' (Conv.cpp:91:19) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_channel_pool_1' (Pool.cpp:28:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_4' (Conv.cpp:107:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_117_1' (Conv.cpp:117:20) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_5' (Conv.cpp:133:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_fc_5' (Conv.cpp:148:4) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_ap_5' (Conv.cpp:145:3) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_143_1' (Conv.cpp:143:20) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_channel_pool_2' (Pool.cpp:50:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_6' (Conv.cpp:159:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_fc_6' (Conv.cpp:174:4) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_ap_6' (Conv.cpp:171:3) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_169_1' (Conv.cpp:169:20) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_3_channel_pad_7' (Conv.cpp:185:2) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_fc_7' (Conv.cpp:200:4) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_ap_7' (Conv.cpp:197:3) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_195_1' (Conv.cpp:195:20) in function 'CNN'.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_for_channel_pool_3' (Pool.cpp:72:2) in function 'CNN'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.203 seconds; current allocated memory: 402.336 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CNN' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_pad_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv0'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_pad_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'loop_for_channel_pad_0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.963 seconds; current allocated memory: 407.613 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 408.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv0'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_1_loop_for_ap_0'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0' (loop 'VITIS_LOOP_13_1_loop_for_ap_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_2', Conv.cpp:21->CNN.cpp:30) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0' (loop 'VITIS_LOOP_13_1_loop_for_ap_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_4', Conv.cpp:21->CNN.cpp:30) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 31, loop 'VITIS_LOOP_13_1_loop_for_ap_0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.431 seconds; current allocated memory: 409.852 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.176 seconds; current allocated memory: 410.082 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv1'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_1_loop_for_channel_pad_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'loop_for_3_channel_pad_1_loop_for_channel_pad_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 410.535 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 410.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv1'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_39_1_loop_for_ap_1'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_8', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_10', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_12', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_14', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_20', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_24', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 9). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' (loop 'VITIS_LOOP_39_1_loop_for_ap_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_26', Conv.cpp:47->CNN.cpp:32) on array 'Weights' due to limited memory ports (II = 10). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 11, Depth = 91, loop 'VITIS_LOOP_39_1_loop_for_ap_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.185 seconds; current allocated memory: 413.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.333 seconds; current allocated memory: 413.762 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_pool_0_loop_for_weight_pool_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_channel_pool_0_loop_for_weight_pool_0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 414.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 414.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv2'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_2_loop_for_channel_pad_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'loop_for_3_channel_pad_2_loop_for_channel_pad_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.255 seconds; current allocated memory: 415.016 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 415.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv2'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_65_1_loop_for_ap_2'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_29', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_31', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_33', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_35', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_41', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_45', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 9). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' (loop 'VITIS_LOOP_65_1_loop_for_ap_2'): Unable to schedule 'load' operation 32 bit ('Weights_load_47', Conv.cpp:73->CNN.cpp:35) on array 'Weights' due to limited memory ports (II = 10). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 11, Depth = 91, loop 'VITIS_LOOP_65_1_loop_for_ap_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.004 seconds; current allocated memory: 417.438 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 417.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv3'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_3_loop_for_channel_pad_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_3_channel_pad_3_loop_for_channel_pad_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 418.211 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.138 seconds; current allocated memory: 418.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv3'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_91_1_loop_for_ap_3'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_50', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_52', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_53', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_55', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_85', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' (loop 'VITIS_LOOP_91_1_loop_for_ap_3'): Unable to schedule 'load' operation 32 bit ('Weights_load_87', Conv.cpp:99->CNN.cpp:37) on array 'Weights' due to limited memory ports (II = 20). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 21, Depth = 171, loop 'VITIS_LOOP_91_1_loop_for_ap_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.092 seconds; current allocated memory: 422.840 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.406 seconds; current allocated memory: 423.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_pool_1_loop_for_weight_pool_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_channel_pool_1_loop_for_weight_pool_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.451 seconds; current allocated memory: 423.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 424.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln110) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv4'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_4_loop_for_channel_pad_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_3_channel_pad_4_loop_for_channel_pad_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 424.402 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 424.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPadConv4'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_1_loop_for_ap_4'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load_92', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load_94', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load_96', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load_126', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 19). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' (loop 'VITIS_LOOP_117_1_loop_for_ap_4'): Unable to schedule 'load' operation 32 bit ('Weights_load_128', Conv.cpp:125->CNN.cpp:40) on array 'Weights' due to limited memory ports (II = 20). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 21, Depth = 171, loop 'VITIS_LOOP_117_1_loop_for_ap_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.94 seconds; current allocated memory: 428.445 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 430.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln136) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_5_loop_for_channel_pad_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_3_channel_pad_5_loop_for_channel_pad_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.522 seconds; current allocated memory: 430.316 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.086 seconds; current allocated memory: 431.125 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln151_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'.
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' (loop 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:151->CNN.cpp:42) and 'select' operation 32 bit ('select_ln145_1', Conv.cpp:145->CNN.cpp:42).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' (loop 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:151->CNN.cpp:42) and 'select' operation 32 bit ('select_ln145_1', Conv.cpp:145->CNN.cpp:42).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' (loop 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:151->CNN.cpp:42) and 'select' operation 32 bit ('select_ln145_1', Conv.cpp:145->CNN.cpp:42).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 20, loop 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.403 seconds; current allocated memory: 432.078 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 432.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_pool_2_loop_for_weight_pool_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_channel_pool_2_loop_for_weight_pool_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.307 seconds; current allocated memory: 432.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 432.512 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln162) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_6_loop_for_channel_pad_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_3_channel_pad_6_loop_for_channel_pad_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 432.707 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 433.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln177_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'.
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' (loop 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:177->CNN.cpp:45) and 'select' operation 32 bit ('select_ln171_1', Conv.cpp:171->CNN.cpp:45).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' (loop 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:177->CNN.cpp:45) and 'select' operation 32 bit ('select_ln171_1', Conv.cpp:171->CNN.cpp:45).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' (loop 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:177->CNN.cpp:45) and 'select' operation 32 bit ('select_ln171_1', Conv.cpp:171->CNN.cpp:45).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 20, loop 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.631 seconds; current allocated memory: 433.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.254 seconds; current allocated memory: 434.574 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln188) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_3_channel_pad_7_loop_for_channel_pad_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_3_channel_pad_7_loop_for_channel_pad_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.319 seconds; current allocated memory: 434.895 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 434.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln203_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'.
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' (loop 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:203->CNN.cpp:47) and 'select' operation 32 bit ('select_ln197_1', Conv.cpp:197->CNN.cpp:47).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' (loop 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:203->CNN.cpp:47) and 'select' operation 32 bit ('select_ln197_1', Conv.cpp:197->CNN.cpp:47).
+WARNING: [HLS 200-880] The II Violation in module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' (loop 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'fadd' operation 32 bit ('s', Conv.cpp:203->CNN.cpp:47) and 'select' operation 32 bit ('select_ln197_1', Conv.cpp:197->CNN.cpp:47).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 20, loop 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.272 seconds; current allocated memory: 435.492 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.225 seconds; current allocated memory: 435.617 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPool3'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_pool_3_loop_for_weight_pool_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_for_channel_pool_3_loop_for_weight_pool_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.342 seconds; current allocated memory: 436.121 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.084 seconds; current allocated memory: 436.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_channel_gap_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'OutPool3'. Use bind_storage pragma to override this type.
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_channel_gap_4'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_channel_gap_4' (loop 'loop_for_channel_gap_4'): Unable to schedule 'load' operation 32 bit ('OutPool3_load_16', Pool.cpp:98->CNN.cpp:49) on array 'OutPool3' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'OutPool3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 135, loop 'loop_for_channel_gap_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 437.719 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.312 seconds; current allocated memory: 438.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_a_Dense_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_a_Dense_0'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_21', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_23', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_25', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_27', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_41', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_49', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 15). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_0' (loop 'loop_for_a_Dense_0'): Unable to schedule 'load' operation 32 bit ('Weights_load_51', Dense.cpp:7->CNN.cpp:50) on array 'Weights' due to limited memory ports (II = 16). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 17, Depth = 139, loop 'loop_for_a_Dense_0'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.05 seconds; current allocated memory: 441.047 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.412 seconds; current allocated memory: 442.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_for_a_Dense_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_for_a_Dense_1'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_1', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_3', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_5', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_7', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_13', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_17', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 9). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+WARNING: [HLS 200-885] The II Violation in module 'CNN_Pipeline_loop_for_a_Dense_1' (loop 'loop_for_a_Dense_1'): Unable to schedule 'load' operation 32 bit ('Weights_load_19', Dense.cpp:19->CNN.cpp:51) on array 'Weights' due to limited memory ports (II = 10). Please consider using a memory core with more ports or partitioning the array 'Weights'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 11, Depth = 89, loop 'loop_for_a_Dense_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.872 seconds; current allocated memory: 443.617 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.253 seconds; current allocated memory: 444.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN_Pipeline_loop_detect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_detect'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'loop_detect'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.218 seconds; current allocated memory: 444.625 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 444.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CNN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.45 seconds; current allocated memory: 445.676 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.396 seconds; current allocated memory: 446.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_pad_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_pad_0' pipeline 'loop_for_channel_pad_0' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_pad_0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.764 seconds; current allocated memory: 448.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0' pipeline 'VITIS_LOOP_13_1_loop_for_ap_0' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.411 seconds; current allocated memory: 450.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1' pipeline 'loop_for_3_channel_pad_1_loop_for_channel_pad_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_10ns_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.726 seconds; current allocated memory: 453.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1' pipeline 'VITIS_LOOP_39_1_loop_for_ap_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.365 seconds; current allocated memory: 457.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0' pipeline 'loop_for_channel_pool_0_loop_for_weight_pool_0' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.653 seconds; current allocated memory: 462.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2' pipeline 'loop_for_3_channel_pad_2_loop_for_channel_pad_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_9ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 463.914 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2' pipeline 'VITIS_LOOP_65_1_loop_for_ap_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.355 seconds; current allocated memory: 467.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3' pipeline 'loop_for_3_channel_pad_3_loop_for_channel_pad_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_8ns_8ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.824 seconds; current allocated memory: 471.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3' pipeline 'VITIS_LOOP_91_1_loop_for_ap_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.763 seconds; current allocated memory: 477.758 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1' pipeline 'loop_for_channel_pool_1_loop_for_weight_pool_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.969 seconds; current allocated memory: 486.785 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4' pipeline 'loop_for_3_channel_pad_4_loop_for_channel_pad_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_7ns_7ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 487.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4' pipeline 'VITIS_LOOP_117_1_loop_for_ap_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.481 seconds; current allocated memory: 492.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5' pipeline 'loop_for_3_channel_pad_5_loop_for_channel_pad_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_7ns_7ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.64 seconds; current allocated memory: 502.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' pipeline 'VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_7ns_7ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.385 seconds; current allocated memory: 502.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2' pipeline 'loop_for_channel_pool_2_loop_for_weight_pool_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.335 seconds; current allocated memory: 505.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6' pipeline 'loop_for_3_channel_pad_6_loop_for_channel_pad_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_6ns_6ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.291 seconds; current allocated memory: 507.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' pipeline 'VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_5ns_6ns_6ns_10_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 509.320 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7' pipeline 'loop_for_3_channel_pad_7_loop_for_channel_pad_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_6ns_6ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.561 seconds; current allocated memory: 512.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' pipeline 'VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_6ns_6ns_11_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.295 seconds; current allocated memory: 514.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3' pipeline 'loop_for_channel_pool_3_loop_for_weight_pool_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.359 seconds; current allocated memory: 517.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_channel_gap_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_channel_gap_4' pipeline 'loop_for_channel_gap_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'CNN_Pipeline_loop_for_channel_gap_4' is 24548 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_channel_gap_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.656 seconds; current allocated memory: 522.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_a_Dense_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_a_Dense_0' pipeline 'loop_for_a_Dense_0' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_a_Dense_0'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.744 seconds; current allocated memory: 529.414 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_for_a_Dense_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_for_a_Dense_1' pipeline 'loop_for_a_Dense_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_for_a_Dense_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.674 seconds; current allocated memory: 536.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN_Pipeline_loop_detect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CNN_Pipeline_loop_detect' pipeline 'loop_detect' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN_Pipeline_loop_detect'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.537 seconds; current allocated memory: 540.363 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CNN' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'CNN/InModel' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CNN/OutModel' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CNN/Weights' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'CNN' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CNN'.
+INFO: [RTMG 210-278] Implementing memory 'CNN_out_Dense_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv0_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutConv0_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv1_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutConv1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPool0_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv2_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv3_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv4_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv5_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv6_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPadConv7_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutPool3_RAM_1WNR_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutGAP4_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'CNN_OutDense0_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.696 seconds; current allocated memory: 545.816 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.744 seconds; current allocated memory: 553.469 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.062 seconds; current allocated memory: 569.641 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for CNN.
+INFO: [VLOG 209-307] Generating Verilog RTL for CNN.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 131.80 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 36 seconds. CPU system time: 4 seconds. Elapsed time: 78.262 seconds; current allocated memory: 439.250 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 6714.88 seconds; current allocated memory: 8.027 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/Ky2nam3/do_an_1/code/doan1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -output F:/Ky2nam3/do_an_1/code/doan1 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 19.352 seconds; current allocated memory: 9.840 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/Ky2nam3/do_an_1/code/doan1
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./doan/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name CNN CNN 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 39.242 seconds; current allocated memory: 10.066 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/Ky2nam3/do_an_1/code/doan1
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./doan/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name CNN CNN 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level port 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2723.74 seconds; current allocated memory: 8.465 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=port
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/Ky2nam3/do_an_1/code/doan1
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level port -wave_debug 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./doan/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name CNN CNN 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output F:/Ky2nam3/do_an_1/code/doan1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 24.13 seconds; current allocated memory: 9.805 MB.

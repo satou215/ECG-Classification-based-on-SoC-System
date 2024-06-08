@@ -1,0 +1,58 @@
+---
+MainSourceFile:  'F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/.autopilot/db/CNN_tb.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866139
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_2:  '
+    FileOffset:      28
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866362
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_3:  '
+    FileOffset:      36
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866580
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_4:  '
+    FileOffset:      44
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866750
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_47_5:  '
+    FileOffset:      47
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866824
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_47_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_6:  '
+    FileOffset:      55
+    FilePath:        CNN_tb.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp'
+        Offset:          866998
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_6: '
+...

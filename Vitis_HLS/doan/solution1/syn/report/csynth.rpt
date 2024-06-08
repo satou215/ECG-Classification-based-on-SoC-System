@@ -1,0 +1,710 @@
+
+
+================================================================
+== Synthesis Summary Report of 'CNN'
+================================================================
++ General Information: 
+    * Date:           Sat Jun  1 06:31:39 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        doan
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+-------------+-----+
+    |                                   Modules                                  |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |          |         |             |             |     |
+    |                                   & Loops                                  |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|   BRAM   |   DSP   |      FF     |     LUT     | URAM|
+    +----------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+-------------+-----+
+    |+ CNN                                                                       |  Timing|  -0.29|  1735898|  1.736e+07|         -|  1735899|       -|        no|  94 (32%)|  46 (3%)|  34157 (14%)|  33937 (28%)|    -|
+    | + CNN_Pipeline_loop_for_channel_pad_0                                      |       -|   4.38|      326|  3.260e+03|         -|      326|       -|        no|         -|        -|     21 (~0%)|    151 (~0%)|    -|
+    |  o loop_for_channel_pad_0                                                  |       -|   7.30|      324|  3.240e+03|         2|        1|     324|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0                               |       -|   0.28|     3869|  3.869e+04|         -|     3869|       -|        no|         -|        -|   1154 (~0%)|    996 (~0%)|    -|
+    |  o VITIS_LOOP_13_1_loop_for_ap_0                                           |      II|   7.30|     3867|  3.867e+04|        31|        3|    1280|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1             |       -|   2.90|     1298|  1.298e+04|         -|     1298|       -|        no|         -|        -|     39 (~0%)|    344 (~0%)|    -|
+    |  o loop_for_3_channel_pad_1_loop_for_channel_pad_1                         |       -|   7.30|     1296|  1.296e+04|         2|        1|    1296|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1                               |       -|   0.03|    14161|  1.416e+05|         -|    14161|       -|        no|         -|        -|    2680 (1%)|    2199 (1%)|    -|
+    |  o VITIS_LOOP_39_1_loop_for_ap_1                                           |      II|   7.30|    14159|  1.416e+05|        91|       11|    1280|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0              |       -|   1.29|      644|  6.440e+03|         -|      644|       -|        no|         -|        -|    272 (~0%)|    512 (~0%)|    -|
+    |  o loop_for_channel_pool_0_loop_for_weight_pool_0                          |       -|   7.30|      642|  6.420e+03|         4|        1|     640|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2             |       -|   2.94|      658|  6.580e+03|         -|      658|       -|        no|         -|        -|     36 (~0%)|    322 (~0%)|    -|
+    |  o loop_for_3_channel_pad_2_loop_for_channel_pad_2                         |       -|   7.30|      656|  6.560e+03|         2|        1|     656|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2                               |       -|   0.03|    14161|  1.416e+05|         -|    14161|       -|        no|         -|        -|    2634 (1%)|    2212 (1%)|    -|
+    |  o VITIS_LOOP_65_1_loop_for_ap_2                                           |      II|   7.30|    14159|  1.416e+05|        91|       11|    1280|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3             |       -|   4.38|     1316|  1.316e+04|         -|     1316|       -|        no|         -|  1 (~0%)|    118 (~0%)|    309 (~0%)|    -|
+    |  o loop_for_3_channel_pad_3_loop_for_channel_pad_3                         |       -|   7.30|     1314|  1.314e+04|         4|        1|    1312|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3                               |  Timing|  -0.29|    27031|  2.703e+05|         -|    27031|       -|        no|         -|        -|    4191 (1%)|    3821 (3%)|    -|
+    |  o VITIS_LOOP_91_1_loop_for_ap_3                                           |      II|   7.30|    27029|  2.703e+05|       171|       21|    1280|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1              |       -|   1.29|      644|  6.440e+03|         -|      644|       -|        no|         -|        -|    272 (~0%)|    531 (~0%)|    -|
+    |  o loop_for_channel_pool_1_loop_for_weight_pool_1                          |       -|   7.30|      642|  6.420e+03|         4|        1|     640|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4             |       -|   4.33|      676|  6.760e+03|         -|      676|       -|        no|         -|  1 (~0%)|    114 (~0%)|    303 (~0%)|    -|
+    |  o loop_for_3_channel_pad_4_loop_for_channel_pad_4                         |       -|   7.30|      674|  6.740e+03|         4|        1|     672|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4                              |  Timing|  -0.29|    27031|  2.703e+05|         -|    27031|       -|        no|         -|        -|    4196 (1%)|    3794 (3%)|    -|
+    |  o VITIS_LOOP_117_1_loop_for_ap_4                                          |      II|   7.30|    27029|  2.703e+05|       171|       21|    1280|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5             |       -|   4.38|     1348|  1.348e+04|         -|     1348|       -|        no|         -|  1 (~0%)|    118 (~0%)|    304 (~0%)|    -|
+    |  o loop_for_3_channel_pad_5_loop_for_channel_pad_5                         |       -|   7.30|     1346|  1.346e+04|         4|        1|    1344|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5  |       -|   0.28|   409616|  4.096e+06|         -|   409616|       -|        no|         -|  1 (~0%)|    548 (~0%)|    776 (~0%)|    -|
+    |  o VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5              |      II|   7.30|   409614|  4.096e+06|        19|        4|  102400|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2              |       -|   1.29|      644|  6.440e+03|         -|      644|       -|        no|         -|        -|    272 (~0%)|    529 (~0%)|    -|
+    |  o loop_for_channel_pool_2_loop_for_weight_pool_2                          |       -|   7.30|      642|  6.420e+03|         4|        1|     640|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6             |       -|   4.32|      708|  7.080e+03|         -|      708|       -|        no|         -|  1 (~0%)|    114 (~0%)|    298 (~0%)|    -|
+    |  o loop_for_3_channel_pad_6_loop_for_channel_pad_6                         |       -|   7.30|      706|  7.060e+03|         4|        1|     704|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6  |       -|   0.28|   409616|  4.096e+06|         -|   409616|       -|        no|         -|  1 (~0%)|    605 (~0%)|    819 (~0%)|    -|
+    |  o VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6              |      II|   7.30|   409614|  4.096e+06|        19|        4|  102400|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7             |       -|   4.37|     1412|  1.412e+04|         -|     1412|       -|        no|         -|  1 (~0%)|    118 (~0%)|    300 (~0%)|    -|
+    |  o loop_for_3_channel_pad_7_loop_for_channel_pad_7                         |       -|   7.30|     1410|  1.410e+04|         4|        1|    1408|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7  |       -|   0.28|   819216|  8.192e+06|         -|   819216|       -|        no|         -|  1 (~0%)|    549 (~0%)|    804 (~0%)|    -|
+    |  o VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7              |      II|   7.30|   819214|  8.192e+06|        19|        4|  204800|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3              |       -|   1.29|      644|  6.440e+03|         -|      644|       -|        no|         -|        -|    272 (~0%)|    528 (~0%)|    -|
+    |  o loop_for_channel_pool_3_loop_for_weight_pool_3                          |       -|   7.30|      642|  6.420e+03|         4|        1|     640|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_channel_gap_4                                      |       -|   0.28|      198|  1.980e+03|         -|      198|       -|        no|         -|  28 (2%)|    7528 (3%)|    5938 (5%)|    -|
+    |  o loop_for_channel_gap_4                                                  |      II|   7.30|      196|  1.960e+03|       135|        2|      32|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_a_Dense_0                                          |       -|   0.03|      463|  4.630e+03|         -|      463|       -|        no|         -|        -|    3250 (1%)|    2480 (2%)|    -|
+    |  o loop_for_a_Dense_0                                                      |      II|   7.30|      461|  4.610e+03|       139|       17|      20|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_for_a_Dense_1                                          |       -|   0.03|      134|  1.340e+03|         -|      134|       -|        no|         -|        -|   2310 (~0%)|    1684 (1%)|    -|
+    |  o loop_for_a_Dense_1                                                      |      II|   7.30|      132|  1.320e+03|        89|       11|       5|       yes|         -|        -|            -|            -|    -|
+    | + CNN_Pipeline_loop_detect                                                 |       -|   1.23|        8|     80.000|         -|        8|       -|        no|         -|        -|    143 (~0%)|    247 (~0%)|    -|
+    |  o loop_detect                                                             |       -|   7.30|        6|     60.000|         4|        1|       4|       yes|         -|        -|            -|            -|    -|
+    +----------------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+----------+---------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------------+-----------+----------+
+| Port             | Direction | Bitwidth |
++------------------+-----------+----------+
+| InModel_address0 | out       | 9        |
+| InModel_q0       | in        | 32       |
+| Weights_address0 | out       | 14       |
+| Weights_address1 | out       | 14       |
+| Weights_q0       | in        | 32       |
+| Weights_q1       | in        | 32       |
++------------------+-----------+----------+
+
+* Other Ports
++----------+--------+-----------+----------+
+| Port     | Mode   | Direction | Bitwidth |
++----------+--------+-----------+----------+
+| OutModel | ap_vld | out       | 32       |
++----------+--------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| InModel  | in        | float*   |
+| OutModel | out       | float&   |
+| Weights  | in        | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+------------------+---------+----------+
+| Argument | HW Interface     | HW Type | HW Usage |
++----------+------------------+---------+----------+
+| InModel  | InModel_address0 | port    | offset   |
+| InModel  | InModel_ce0      | port    |          |
+| InModel  | InModel_q0       | port    |          |
+| OutModel | OutModel         | port    |          |
+| OutModel | OutModel_ap_vld  | port    |          |
+| Weights  | Weights_address0 | port    | offset   |
+| Weights  | Weights_ce0      | port    |          |
+| Weights  | Weights_q0       | port    |          |
+| Weights  | Weights_address1 | port    | offset   |
+| Weights  | Weights_ce1      | port    |          |
+| Weights  | Weights_q1       | port    |          |
++----------+------------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------------------------+-----+--------+----------------+------+-----------+---------+
+| Name                                                                       | DSP | Pragma | Variable       | Op   | Impl      | Latency |
++----------------------------------------------------------------------------+-----+--------+----------------+------+-----------+---------+
+| + CNN                                                                      | 46  |        |                |      |           |         |
+|  + CNN_Pipeline_loop_for_channel_pad_0                                     | 0   |        |                |      |           |         |
+|    add_ln5_fu_90_p2                                                        |     |        | add_ln5        | add  | fabric    | 0       |
+|    add_ln6_fu_96_p2                                                        |     |        | add_ln6        | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_13_1_loop_for_ap_0                              | 0   |        |                |      |           |         |
+|    add_ln13_fu_271_p2                                                      |     |        | add_ln13       | add  | fabric    | 0       |
+|    add_ln13_2_fu_297_p2                                                    |     |        | add_ln13_2     | add  | fabric    | 0       |
+|    empty_154_fu_327_p2                                                     |     |        | empty_154      | add  | fabric    | 0       |
+|    arrayidx3_sum_fu_472_p2                                                 |     |        | arrayidx3_sum  | add  | fabric    | 0       |
+|    add_ln21_fu_347_p2                                                      |     |        | add_ln21       | add  | fabric    | 0       |
+|    add_ln21_1_fu_358_p2                                                    |     |        | add_ln21_1     | add  | fabric    | 0       |
+|    add_ln21_2_fu_384_p2                                                    |     |        | add_ln21_2     | add  | fabric    | 0       |
+|    add_ln21_3_fu_394_p2                                                    |     |        | add_ln21_3     | add  | fabric    | 0       |
+|    add_ln21_4_fu_404_p2                                                    |     |        | add_ln21_4     | add  | fabric    | 0       |
+|    add_ln21_5_fu_414_p2                                                    |     |        | add_ln21_5     | add  | fabric    | 0       |
+|    add_ln21_6_fu_434_p2                                                    |     |        | add_ln21_6     | add  | fabric    | 0       |
+|    add_ln21_7_fu_444_p2                                                    |     |        | add_ln21_7     | add  | fabric    | 0       |
+|    add_ln23_1_fu_551_p2                                                    |     |        | add_ln23_1     | add  | fabric    | 0       |
+|    add_ln23_fu_560_p2                                                      |     |        | add_ln23       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_1_loop_for_channel_pad_1            | 0   |        |                |      |           |         |
+|    add_ln29_fu_120_p2                                                      |     |        | add_ln29       | add  | fabric    | 0       |
+|    add_ln29_1_fu_146_p2                                                    |     |        | add_ln29_1     | add  | fabric    | 0       |
+|    mul_3ns_10ns_10_1_1_U11                                                 |     |        | empty          | mul  | auto      | 0       |
+|    add_ln32_fu_266_p2                                                      |     |        | add_ln32       | add  | fabric    | 0       |
+|    add_ln32_1_fu_198_p2                                                    |     |        | add_ln32_1     | add  | fabric    | 0       |
+|    add_ln32_2_fu_208_p2                                                    |     |        | add_ln32_2     | add  | fabric    | 0       |
+|    add_ln31_fu_219_p2                                                      |     |        | add_ln31       | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_39_1_loop_for_ap_1                              | 0   |        |                |      |           |         |
+|    add_ln39_fu_651_p2                                                      |     |        | add_ln39       | add  | fabric    | 0       |
+|    add_ln39_2_fu_677_p2                                                    |     |        | add_ln39_2     | add  | fabric    | 0       |
+|    add_ln47_fu_714_p2                                                      |     |        | add_ln47       | add  | fabric    | 0       |
+|    add_ln47_1_fu_725_p2                                                    |     |        | add_ln47_1     | add  | fabric    | 0       |
+|    add_ln47_2_fu_736_p2                                                    |     |        | add_ln47_2     | add  | fabric    | 0       |
+|    add_ln47_3_fu_762_p2                                                    |     |        | add_ln47_3     | add  | fabric    | 0       |
+|    add_ln47_4_fu_772_p2                                                    |     |        | add_ln47_4     | add  | fabric    | 0       |
+|    add_ln47_5_fu_782_p2                                                    |     |        | add_ln47_5     | add  | fabric    | 0       |
+|    add_ln47_6_fu_792_p2                                                    |     |        | add_ln47_6     | add  | fabric    | 0       |
+|    add_ln47_7_fu_815_p2                                                    |     |        | add_ln47_7     | add  | fabric    | 0       |
+|    add_ln47_8_fu_825_p2                                                    |     |        | add_ln47_8     | add  | fabric    | 0       |
+|    add_ln47_9_fu_835_p2                                                    |     |        | add_ln47_9     | add  | fabric    | 0       |
+|    add_ln47_10_fu_845_p2                                                   |     |        | add_ln47_10    | add  | fabric    | 0       |
+|    add_ln47_11_fu_866_p2                                                   |     |        | add_ln47_11    | add  | fabric    | 0       |
+|    add_ln47_12_fu_876_p2                                                   |     |        | add_ln47_12    | add  | fabric    | 0       |
+|    add_ln47_13_fu_886_p2                                                   |     |        | add_ln47_13    | add  | fabric    | 0       |
+|    add_ln47_14_fu_896_p2                                                   |     |        | add_ln47_14    | add  | fabric    | 0       |
+|    add_ln47_15_fu_916_p2                                                   |     |        | add_ln47_15    | add  | fabric    | 0       |
+|    add_ln47_16_fu_926_p2                                                   |     |        | add_ln47_16    | add  | fabric    | 0       |
+|    add_ln47_17_fu_936_p2                                                   |     |        | add_ln47_17    | add  | fabric    | 0       |
+|    add_ln47_18_fu_946_p2                                                   |     |        | add_ln47_18    | add  | fabric    | 0       |
+|    add_ln47_19_fu_966_p2                                                   |     |        | add_ln47_19    | add  | fabric    | 0       |
+|    add_ln47_20_fu_976_p2                                                   |     |        | add_ln47_20    | add  | fabric    | 0       |
+|    add_ln47_21_fu_986_p2                                                   |     |        | add_ln47_21    | add  | fabric    | 0       |
+|    add_ln47_22_fu_996_p2                                                   |     |        | add_ln47_22    | add  | fabric    | 0       |
+|    add_ln47_23_fu_1016_p2                                                  |     |        | add_ln47_23    | add  | fabric    | 0       |
+|    add_ln47_24_fu_1026_p2                                                  |     |        | add_ln47_24    | add  | fabric    | 0       |
+|    add_ln47_25_fu_1036_p2                                                  |     |        | add_ln47_25    | add  | fabric    | 0       |
+|    add_ln47_26_fu_1046_p2                                                  |     |        | add_ln47_26    | add  | fabric    | 0       |
+|    add_ln47_27_fu_1069_p2                                                  |     |        | add_ln47_27    | add  | fabric    | 0       |
+|    add_ln47_28_fu_1079_p2                                                  |     |        | add_ln47_28    | add  | fabric    | 0       |
+|    add_ln47_29_fu_1089_p2                                                  |     |        | add_ln47_29    | add  | fabric    | 0       |
+|    add_ln47_30_fu_1099_p2                                                  |     |        | add_ln47_30    | add  | fabric    | 0       |
+|    add_ln47_31_fu_1120_p2                                                  |     |        | add_ln47_31    | add  | fabric    | 0       |
+|    add_ln47_32_fu_1130_p2                                                  |     |        | add_ln47_32    | add  | fabric    | 0       |
+|    add_ln47_33_fu_1140_p2                                                  |     |        | add_ln47_33    | add  | fabric    | 0       |
+|    add_ln47_34_fu_1150_p2                                                  |     |        | add_ln47_34    | add  | fabric    | 0       |
+|    add_ln47_35_fu_1170_p2                                                  |     |        | add_ln47_35    | add  | fabric    | 0       |
+|    add_ln47_36_fu_1180_p2                                                  |     |        | add_ln47_36    | add  | fabric    | 0       |
+|    add_ln47_37_fu_1190_p2                                                  |     |        | add_ln47_37    | add  | fabric    | 0       |
+|    add_ln47_38_fu_1200_p2                                                  |     |        | add_ln47_38    | add  | fabric    | 0       |
+|    add_ln49_1_fu_1314_p2                                                   |     |        | add_ln49_1     | add  | fabric    | 0       |
+|    add_ln49_fu_1323_p2                                                     |     |        | add_ln49       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_channel_pool_0_loop_for_weight_pool_0             | 0   |        |                |      |           |         |
+|    add_ln6_fu_153_p2                                                       |     |        | add_ln6        | add  | fabric    | 0       |
+|    add_ln6_1_fu_179_p2                                                     |     |        | add_ln6_1      | add  | fabric    | 0       |
+|    add_ln13_fu_223_p2                                                      |     |        | add_ln13       | add  | fabric    | 0       |
+|    add_ln13_1_fu_244_p2                                                    |     |        | add_ln13_1     | add  | fabric    | 0       |
+|    add_ln17_1_fu_435_p2                                                    |     |        | add_ln17_1     | add  | fabric    | 0       |
+|    add_ln17_fu_444_p2                                                      |     |        | add_ln17       | add  | fabric    | 0       |
+|    add_ln19_fu_250_p2                                                      |     |        | add_ln19       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_2_loop_for_channel_pad_2            | 0   |        |                |      |           |         |
+|    add_ln55_fu_120_p2                                                      |     |        | add_ln55       | add  | fabric    | 0       |
+|    add_ln55_1_fu_146_p2                                                    |     |        | add_ln55_1     | add  | fabric    | 0       |
+|    mul_3ns_9ns_9_1_1_U27                                                   |     |        | empty          | mul  | auto      | 0       |
+|    add_ln58_fu_266_p2                                                      |     |        | add_ln58       | add  | fabric    | 0       |
+|    add_ln58_1_fu_198_p2                                                    |     |        | add_ln58_1     | add  | fabric    | 0       |
+|    add_ln58_2_fu_208_p2                                                    |     |        | add_ln58_2     | add  | fabric    | 0       |
+|    add_ln57_fu_219_p2                                                      |     |        | add_ln57       | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_65_1_loop_for_ap_2                              | 0   |        |                |      |           |         |
+|    add_ln65_fu_651_p2                                                      |     |        | add_ln65       | add  | fabric    | 0       |
+|    add_ln65_1_fu_677_p2                                                    |     |        | add_ln65_1     | add  | fabric    | 0       |
+|    empty_144_fu_719_p2                                                     |     |        | empty_144      | add  | fabric    | 0       |
+|    arrayidx17_sum_fu_1291_p2                                               |     |        | arrayidx17_sum | add  | fabric    | 0       |
+|    add_ln73_fu_730_p2                                                      |     |        | add_ln73       | add  | fabric    | 0       |
+|    add_ln73_1_fu_741_p2                                                    |     |        | add_ln73_1     | add  | fabric    | 0       |
+|    add_ln73_2_fu_752_p2                                                    |     |        | add_ln73_2     | add  | fabric    | 0       |
+|    add_ln73_3_fu_778_p2                                                    |     |        | add_ln73_3     | add  | fabric    | 0       |
+|    add_ln73_4_fu_788_p2                                                    |     |        | add_ln73_4     | add  | fabric    | 0       |
+|    add_ln73_5_fu_798_p2                                                    |     |        | add_ln73_5     | add  | fabric    | 0       |
+|    add_ln73_6_fu_808_p2                                                    |     |        | add_ln73_6     | add  | fabric    | 0       |
+|    add_ln73_7_fu_831_p2                                                    |     |        | add_ln73_7     | add  | fabric    | 0       |
+|    add_ln73_8_fu_841_p2                                                    |     |        | add_ln73_8     | add  | fabric    | 0       |
+|    add_ln73_9_fu_851_p2                                                    |     |        | add_ln73_9     | add  | fabric    | 0       |
+|    add_ln73_10_fu_861_p2                                                   |     |        | add_ln73_10    | add  | fabric    | 0       |
+|    add_ln73_11_fu_882_p2                                                   |     |        | add_ln73_11    | add  | fabric    | 0       |
+|    add_ln73_12_fu_892_p2                                                   |     |        | add_ln73_12    | add  | fabric    | 0       |
+|    add_ln73_13_fu_902_p2                                                   |     |        | add_ln73_13    | add  | fabric    | 0       |
+|    add_ln73_14_fu_912_p2                                                   |     |        | add_ln73_14    | add  | fabric    | 0       |
+|    add_ln73_15_fu_935_p2                                                   |     |        | add_ln73_15    | add  | fabric    | 0       |
+|    add_ln73_16_fu_946_p2                                                   |     |        | add_ln73_16    | add  | fabric    | 0       |
+|    add_ln73_17_fu_956_p2                                                   |     |        | add_ln73_17    | add  | fabric    | 0       |
+|    add_ln73_18_fu_967_p2                                                   |     |        | add_ln73_18    | add  | fabric    | 0       |
+|    add_ln73_19_fu_987_p2                                                   |     |        | add_ln73_19    | add  | fabric    | 0       |
+|    add_ln73_20_fu_997_p2                                                   |     |        | add_ln73_20    | add  | fabric    | 0       |
+|    add_ln73_21_fu_1007_p2                                                  |     |        | add_ln73_21    | add  | fabric    | 0       |
+|    add_ln73_22_fu_1017_p2                                                  |     |        | add_ln73_22    | add  | fabric    | 0       |
+|    add_ln73_23_fu_1037_p2                                                  |     |        | add_ln73_23    | add  | fabric    | 0       |
+|    add_ln73_24_fu_1047_p2                                                  |     |        | add_ln73_24    | add  | fabric    | 0       |
+|    add_ln73_25_fu_1057_p2                                                  |     |        | add_ln73_25    | add  | fabric    | 0       |
+|    add_ln73_26_fu_1067_p2                                                  |     |        | add_ln73_26    | add  | fabric    | 0       |
+|    add_ln73_27_fu_1112_p2                                                  |     |        | add_ln73_27    | add  | fabric    | 0       |
+|    add_ln73_28_fu_1122_p2                                                  |     |        | add_ln73_28    | add  | fabric    | 0       |
+|    add_ln73_29_fu_1132_p2                                                  |     |        | add_ln73_29    | add  | fabric    | 0       |
+|    add_ln73_30_fu_1142_p2                                                  |     |        | add_ln73_30    | add  | fabric    | 0       |
+|    add_ln73_31_fu_1178_p2                                                  |     |        | add_ln73_31    | add  | fabric    | 0       |
+|    add_ln73_32_fu_1188_p2                                                  |     |        | add_ln73_32    | add  | fabric    | 0       |
+|    add_ln73_33_fu_1198_p2                                                  |     |        | add_ln73_33    | add  | fabric    | 0       |
+|    add_ln73_34_fu_1208_p2                                                  |     |        | add_ln73_34    | add  | fabric    | 0       |
+|    add_ln73_35_fu_1228_p2                                                  |     |        | add_ln73_35    | add  | fabric    | 0       |
+|    add_ln73_36_fu_1238_p2                                                  |     |        | add_ln73_36    | add  | fabric    | 0       |
+|    add_ln73_37_fu_1248_p2                                                  |     |        | add_ln73_37    | add  | fabric    | 0       |
+|    add_ln73_38_fu_1258_p2                                                  |     |        | add_ln73_38    | add  | fabric    | 0       |
+|    add_ln75_1_fu_1153_p2                                                   |     |        | add_ln75_1     | add  | fabric    | 0       |
+|    add_ln75_fu_1162_p2                                                     |     |        | add_ln75       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_3_loop_for_channel_pad_3            | 1   |        |                |      |           |         |
+|    add_ln81_fu_122_p2                                                      |     |        | add_ln81       | add  | fabric    | 0       |
+|    add_ln81_1_fu_148_p2                                                    |     |        | add_ln81_1     | add  | fabric    | 0       |
+|    mac_muladd_4ns_8ns_8ns_11_4_1_U39                                       | 1   |        | empty          | mul  | dsp_slice | 3       |
+|    mac_muladd_4ns_8ns_8ns_11_4_1_U39                                       | 1   |        | add_ln84       | add  | dsp_slice | 3       |
+|    add_ln84_3_fu_246_p2                                                    |     |        | add_ln84_3     | add  | fabric    | 0       |
+|    add_ln83_fu_186_p2                                                      |     |        | add_ln83       | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_91_1_loop_for_ap_3                              | 0   |        |                |      |           |         |
+|    add_ln91_fu_1044_p2                                                     |     |        | add_ln91       | add  | fabric    | 0       |
+|    add_ln91_1_fu_1070_p2                                                   |     |        | add_ln91_1     | add  | fabric    | 0       |
+|    empty_142_fu_1112_p2                                                    |     |        | empty_142      | add  | fabric    | 0       |
+|    arrayidx23_sum_fu_2217_p2                                               |     |        | arrayidx23_sum | add  | fabric    | 0       |
+|    add_ln99_fu_1127_p2                                                     |     |        | add_ln99       | add  | fabric    | 0       |
+|    add_ln99_1_fu_1138_p2                                                   |     |        | add_ln99_1     | add  | fabric    | 0       |
+|    add_ln99_2_fu_1149_p2                                                   |     |        | add_ln99_2     | add  | fabric    | 0       |
+|    add_ln99_3_fu_1175_p2                                                   |     |        | add_ln99_3     | add  | fabric    | 0       |
+|    add_ln99_4_fu_1185_p2                                                   |     |        | add_ln99_4     | add  | fabric    | 0       |
+|    add_ln99_5_fu_1195_p2                                                   |     |        | add_ln99_5     | add  | fabric    | 0       |
+|    add_ln99_6_fu_1205_p2                                                   |     |        | add_ln99_6     | add  | fabric    | 0       |
+|    add_ln99_7_fu_1239_p2                                                   |     |        | add_ln99_7     | add  | fabric    | 0       |
+|    add_ln99_8_fu_1249_p2                                                   |     |        | add_ln99_8     | add  | fabric    | 0       |
+|    add_ln99_9_fu_1259_p2                                                   |     |        | add_ln99_9     | add  | fabric    | 0       |
+|    add_ln99_10_fu_1269_p2                                                  |     |        | add_ln99_10    | add  | fabric    | 0       |
+|    add_ln99_11_fu_1314_p2                                                  |     |        | add_ln99_11    | add  | fabric    | 0       |
+|    add_ln99_12_fu_1325_p2                                                  |     |        | add_ln99_12    | add  | fabric    | 0       |
+|    add_ln99_13_fu_1344_p2                                                  |     |        | add_ln99_13    | add  | fabric    | 0       |
+|    add_ln99_14_fu_1355_p2                                                  |     |        | add_ln99_14    | add  | fabric    | 0       |
+|    add_ln99_15_fu_1375_p2                                                  |     |        | add_ln99_15    | add  | fabric    | 0       |
+|    add_ln99_16_fu_1385_p2                                                  |     |        | add_ln99_16    | add  | fabric    | 0       |
+|    add_ln99_17_fu_1395_p2                                                  |     |        | add_ln99_17    | add  | fabric    | 0       |
+|    add_ln99_18_fu_1405_p2                                                  |     |        | add_ln99_18    | add  | fabric    | 0       |
+|    add_ln99_19_fu_1425_p2                                                  |     |        | add_ln99_19    | add  | fabric    | 0       |
+|    add_ln99_20_fu_1435_p2                                                  |     |        | add_ln99_20    | add  | fabric    | 0       |
+|    add_ln99_21_fu_1445_p2                                                  |     |        | add_ln99_21    | add  | fabric    | 0       |
+|    add_ln99_22_fu_1455_p2                                                  |     |        | add_ln99_22    | add  | fabric    | 0       |
+|    add_ln99_23_fu_1475_p2                                                  |     |        | add_ln99_23    | add  | fabric    | 0       |
+|    add_ln99_24_fu_1485_p2                                                  |     |        | add_ln99_24    | add  | fabric    | 0       |
+|    add_ln99_25_fu_1495_p2                                                  |     |        | add_ln99_25    | add  | fabric    | 0       |
+|    add_ln99_26_fu_1505_p2                                                  |     |        | add_ln99_26    | add  | fabric    | 0       |
+|    add_ln99_27_fu_1528_p2                                                  |     |        | add_ln99_27    | add  | fabric    | 0       |
+|    add_ln99_28_fu_1538_p2                                                  |     |        | add_ln99_28    | add  | fabric    | 0       |
+|    add_ln99_29_fu_1548_p2                                                  |     |        | add_ln99_29    | add  | fabric    | 0       |
+|    add_ln99_30_fu_1558_p2                                                  |     |        | add_ln99_30    | add  | fabric    | 0       |
+|    add_ln99_31_fu_1579_p2                                                  |     |        | add_ln99_31    | add  | fabric    | 0       |
+|    add_ln99_32_fu_1589_p2                                                  |     |        | add_ln99_32    | add  | fabric    | 0       |
+|    add_ln99_33_fu_1599_p2                                                  |     |        | add_ln99_33    | add  | fabric    | 0       |
+|    add_ln99_34_fu_1609_p2                                                  |     |        | add_ln99_34    | add  | fabric    | 0       |
+|    add_ln99_35_fu_1629_p2                                                  |     |        | add_ln99_35    | add  | fabric    | 0       |
+|    add_ln99_36_fu_1639_p2                                                  |     |        | add_ln99_36    | add  | fabric    | 0       |
+|    add_ln99_37_fu_1649_p2                                                  |     |        | add_ln99_37    | add  | fabric    | 0       |
+|    add_ln99_38_fu_1659_p2                                                  |     |        | add_ln99_38    | add  | fabric    | 0       |
+|    add_ln99_39_fu_1679_p2                                                  |     |        | add_ln99_39    | add  | fabric    | 0       |
+|    add_ln99_40_fu_1689_p2                                                  |     |        | add_ln99_40    | add  | fabric    | 0       |
+|    add_ln99_41_fu_1699_p2                                                  |     |        | add_ln99_41    | add  | fabric    | 0       |
+|    add_ln99_42_fu_1709_p2                                                  |     |        | add_ln99_42    | add  | fabric    | 0       |
+|    add_ln99_43_fu_1729_p2                                                  |     |        | add_ln99_43    | add  | fabric    | 0       |
+|    add_ln99_44_fu_1739_p2                                                  |     |        | add_ln99_44    | add  | fabric    | 0       |
+|    add_ln99_45_fu_1749_p2                                                  |     |        | add_ln99_45    | add  | fabric    | 0       |
+|    add_ln99_46_fu_1759_p2                                                  |     |        | add_ln99_46    | add  | fabric    | 0       |
+|    add_ln99_47_fu_1779_p2                                                  |     |        | add_ln99_47    | add  | fabric    | 0       |
+|    add_ln99_48_fu_1789_p2                                                  |     |        | add_ln99_48    | add  | fabric    | 0       |
+|    add_ln99_49_fu_1799_p2                                                  |     |        | add_ln99_49    | add  | fabric    | 0       |
+|    add_ln99_50_fu_1809_p2                                                  |     |        | add_ln99_50    | add  | fabric    | 0       |
+|    add_ln99_51_fu_1833_p2                                                  |     |        | add_ln99_51    | add  | fabric    | 0       |
+|    add_ln99_52_fu_1843_p2                                                  |     |        | add_ln99_52    | add  | fabric    | 0       |
+|    add_ln99_53_fu_1857_p2                                                  |     |        | add_ln99_53    | add  | fabric    | 0       |
+|    add_ln99_54_fu_1867_p2                                                  |     |        | add_ln99_54    | add  | fabric    | 0       |
+|    add_ln99_55_fu_1891_p2                                                  |     |        | add_ln99_55    | add  | fabric    | 0       |
+|    add_ln99_56_fu_1901_p2                                                  |     |        | add_ln99_56    | add  | fabric    | 0       |
+|    add_ln99_57_fu_1915_p2                                                  |     |        | add_ln99_57    | add  | fabric    | 0       |
+|    add_ln99_58_fu_1925_p2                                                  |     |        | add_ln99_58    | add  | fabric    | 0       |
+|    add_ln99_59_fu_1952_p2                                                  |     |        | add_ln99_59    | add  | fabric    | 0       |
+|    add_ln99_60_fu_1962_p2                                                  |     |        | add_ln99_60    | add  | fabric    | 0       |
+|    add_ln99_61_fu_1973_p2                                                  |     |        | add_ln99_61    | add  | fabric    | 0       |
+|    add_ln99_62_fu_1983_p2                                                  |     |        | add_ln99_62    | add  | fabric    | 0       |
+|    add_ln99_63_fu_2004_p2                                                  |     |        | add_ln99_63    | add  | fabric    | 0       |
+|    add_ln99_64_fu_2014_p2                                                  |     |        | add_ln99_64    | add  | fabric    | 0       |
+|    add_ln99_65_fu_2024_p2                                                  |     |        | add_ln99_65    | add  | fabric    | 0       |
+|    add_ln99_66_fu_2034_p2                                                  |     |        | add_ln99_66    | add  | fabric    | 0       |
+|    add_ln99_67_fu_2054_p2                                                  |     |        | add_ln99_67    | add  | fabric    | 0       |
+|    add_ln99_68_fu_2064_p2                                                  |     |        | add_ln99_68    | add  | fabric    | 0       |
+|    add_ln99_69_fu_2074_p2                                                  |     |        | add_ln99_69    | add  | fabric    | 0       |
+|    add_ln99_70_fu_2084_p2                                                  |     |        | add_ln99_70    | add  | fabric    | 0       |
+|    add_ln99_71_fu_2104_p2                                                  |     |        | add_ln99_71    | add  | fabric    | 0       |
+|    add_ln99_72_fu_2114_p2                                                  |     |        | add_ln99_72    | add  | fabric    | 0       |
+|    add_ln99_73_fu_2124_p2                                                  |     |        | add_ln99_73    | add  | fabric    | 0       |
+|    add_ln99_74_fu_2134_p2                                                  |     |        | add_ln99_74    | add  | fabric    | 0       |
+|    add_ln99_75_fu_2154_p2                                                  |     |        | add_ln99_75    | add  | fabric    | 0       |
+|    add_ln99_76_fu_2164_p2                                                  |     |        | add_ln99_76    | add  | fabric    | 0       |
+|    add_ln99_77_fu_2174_p2                                                  |     |        | add_ln99_77    | add  | fabric    | 0       |
+|    add_ln99_78_fu_2184_p2                                                  |     |        | add_ln99_78    | add  | fabric    | 0       |
+|    add_ln101_1_fu_1280_p2                                                  |     |        | add_ln101_1    | add  | fabric    | 0       |
+|    add_ln101_fu_1289_p2                                                    |     |        | add_ln101      | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_channel_pool_1_loop_for_weight_pool_1             | 0   |        |                |      |           |         |
+|    add_ln28_fu_155_p2                                                      |     |        | add_ln28       | add  | fabric    | 0       |
+|    add_ln28_1_fu_181_p2                                                    |     |        | add_ln28_1     | add  | fabric    | 0       |
+|    empty_133_fu_223_p2                                                     |     |        | empty_133      | add  | fabric    | 0       |
+|    add_ln35_fu_241_p2                                                      |     |        | add_ln35       | add  | fabric    | 0       |
+|    add_ln35_1_fu_258_p2                                                    |     |        | add_ln35_1     | add  | fabric    | 0       |
+|    add_ln39_fu_452_p2                                                      |     |        | add_ln39       | add  | fabric    | 0       |
+|    add_ln39_1_fu_462_p2                                                    |     |        | add_ln39_1     | add  | fabric    | 0       |
+|    add_ln41_fu_264_p2                                                      |     |        | add_ln41       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_4_loop_for_channel_pad_4            | 1   |        |                |      |           |         |
+|    add_ln107_fu_120_p2                                                     |     |        | add_ln107      | add  | fabric    | 0       |
+|    add_ln107_1_fu_146_p2                                                   |     |        | add_ln107_1    | add  | fabric    | 0       |
+|    mac_muladd_4ns_7ns_7ns_10_4_1_U55                                       | 1   |        | empty          | mul  | dsp_slice | 3       |
+|    mac_muladd_4ns_7ns_7ns_10_4_1_U55                                       | 1   |        | add_ln110      | add  | dsp_slice | 3       |
+|    add_ln110_3_fu_244_p2                                                   |     |        | add_ln110_3    | add  | fabric    | 0       |
+|    add_ln109_fu_184_p2                                                     |     |        | add_ln109      | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_117_1_loop_for_ap_4                             | 0   |        |                |      |           |         |
+|    add_ln117_fu_1046_p2                                                    |     |        | add_ln117      | add  | fabric    | 0       |
+|    add_ln117_1_fu_1072_p2                                                  |     |        | add_ln117_1    | add  | fabric    | 0       |
+|    empty_156_fu_1114_p2                                                    |     |        | empty_156      | add  | fabric    | 0       |
+|    arrayidx31_sum_fu_2226_p2                                               |     |        | arrayidx31_sum | add  | fabric    | 0       |
+|    add_ln125_fu_1129_p2                                                    |     |        | add_ln125      | add  | fabric    | 0       |
+|    add_ln125_1_fu_1140_p2                                                  |     |        | add_ln125_1    | add  | fabric    | 0       |
+|    add_ln125_2_fu_1151_p2                                                  |     |        | add_ln125_2    | add  | fabric    | 0       |
+|    add_ln125_3_fu_1177_p2                                                  |     |        | add_ln125_3    | add  | fabric    | 0       |
+|    add_ln125_4_fu_1187_p2                                                  |     |        | add_ln125_4    | add  | fabric    | 0       |
+|    add_ln125_5_fu_1197_p2                                                  |     |        | add_ln125_5    | add  | fabric    | 0       |
+|    add_ln125_6_fu_1207_p2                                                  |     |        | add_ln125_6    | add  | fabric    | 0       |
+|    add_ln125_7_fu_1230_p2                                                  |     |        | add_ln125_7    | add  | fabric    | 0       |
+|    add_ln125_8_fu_1240_p2                                                  |     |        | add_ln125_8    | add  | fabric    | 0       |
+|    add_ln125_9_fu_1250_p2                                                  |     |        | add_ln125_9    | add  | fabric    | 0       |
+|    add_ln125_10_fu_1260_p2                                                 |     |        | add_ln125_10   | add  | fabric    | 0       |
+|    add_ln125_11_fu_1290_p2                                                 |     |        | add_ln125_11   | add  | fabric    | 0       |
+|    add_ln125_12_fu_1301_p2                                                 |     |        | add_ln125_12   | add  | fabric    | 0       |
+|    add_ln125_13_fu_1320_p2                                                 |     |        | add_ln125_13   | add  | fabric    | 0       |
+|    add_ln125_14_fu_1331_p2                                                 |     |        | add_ln125_14   | add  | fabric    | 0       |
+|    add_ln125_15_fu_1351_p2                                                 |     |        | add_ln125_15   | add  | fabric    | 0       |
+|    add_ln125_16_fu_1361_p2                                                 |     |        | add_ln125_16   | add  | fabric    | 0       |
+|    add_ln125_17_fu_1371_p2                                                 |     |        | add_ln125_17   | add  | fabric    | 0       |
+|    add_ln125_18_fu_1381_p2                                                 |     |        | add_ln125_18   | add  | fabric    | 0       |
+|    add_ln125_19_fu_1401_p2                                                 |     |        | add_ln125_19   | add  | fabric    | 0       |
+|    add_ln125_20_fu_1411_p2                                                 |     |        | add_ln125_20   | add  | fabric    | 0       |
+|    add_ln125_21_fu_1421_p2                                                 |     |        | add_ln125_21   | add  | fabric    | 0       |
+|    add_ln125_22_fu_1431_p2                                                 |     |        | add_ln125_22   | add  | fabric    | 0       |
+|    add_ln125_23_fu_1451_p2                                                 |     |        | add_ln125_23   | add  | fabric    | 0       |
+|    add_ln125_24_fu_1461_p2                                                 |     |        | add_ln125_24   | add  | fabric    | 0       |
+|    add_ln125_25_fu_1471_p2                                                 |     |        | add_ln125_25   | add  | fabric    | 0       |
+|    add_ln125_26_fu_1481_p2                                                 |     |        | add_ln125_26   | add  | fabric    | 0       |
+|    add_ln125_27_fu_1504_p2                                                 |     |        | add_ln125_27   | add  | fabric    | 0       |
+|    add_ln125_28_fu_1514_p2                                                 |     |        | add_ln125_28   | add  | fabric    | 0       |
+|    add_ln125_29_fu_1524_p2                                                 |     |        | add_ln125_29   | add  | fabric    | 0       |
+|    add_ln125_30_fu_1534_p2                                                 |     |        | add_ln125_30   | add  | fabric    | 0       |
+|    add_ln125_31_fu_1555_p2                                                 |     |        | add_ln125_31   | add  | fabric    | 0       |
+|    add_ln125_32_fu_1565_p2                                                 |     |        | add_ln125_32   | add  | fabric    | 0       |
+|    add_ln125_33_fu_1575_p2                                                 |     |        | add_ln125_33   | add  | fabric    | 0       |
+|    add_ln125_34_fu_1585_p2                                                 |     |        | add_ln125_34   | add  | fabric    | 0       |
+|    add_ln125_35_fu_1605_p2                                                 |     |        | add_ln125_35   | add  | fabric    | 0       |
+|    add_ln125_36_fu_1615_p2                                                 |     |        | add_ln125_36   | add  | fabric    | 0       |
+|    add_ln125_37_fu_1625_p2                                                 |     |        | add_ln125_37   | add  | fabric    | 0       |
+|    add_ln125_38_fu_1657_p2                                                 |     |        | add_ln125_38   | add  | fabric    | 0       |
+|    add_ln125_39_fu_1667_p2                                                 |     |        | add_ln125_39   | add  | fabric    | 0       |
+|    add_ln125_40_fu_1677_p2                                                 |     |        | add_ln125_40   | add  | fabric    | 0       |
+|    add_ln125_41_fu_1687_p2                                                 |     |        | add_ln125_41   | add  | fabric    | 0       |
+|    add_ln125_42_fu_1707_p2                                                 |     |        | add_ln125_42   | add  | fabric    | 0       |
+|    add_ln125_43_fu_1717_p2                                                 |     |        | add_ln125_43   | add  | fabric    | 0       |
+|    add_ln125_44_fu_1727_p2                                                 |     |        | add_ln125_44   | add  | fabric    | 0       |
+|    add_ln125_45_fu_1737_p2                                                 |     |        | add_ln125_45   | add  | fabric    | 0       |
+|    add_ln125_46_fu_1779_p2                                                 |     |        | add_ln125_46   | add  | fabric    | 0       |
+|    add_ln125_47_fu_1789_p2                                                 |     |        | add_ln125_47   | add  | fabric    | 0       |
+|    add_ln125_48_fu_1799_p2                                                 |     |        | add_ln125_48   | add  | fabric    | 0       |
+|    add_ln125_49_fu_1809_p2                                                 |     |        | add_ln125_49   | add  | fabric    | 0       |
+|    add_ln125_50_fu_1848_p2                                                 |     |        | add_ln125_50   | add  | fabric    | 0       |
+|    add_ln125_51_fu_1858_p2                                                 |     |        | add_ln125_51   | add  | fabric    | 0       |
+|    add_ln125_52_fu_1872_p2                                                 |     |        | add_ln125_52   | add  | fabric    | 0       |
+|    add_ln125_53_fu_1882_p2                                                 |     |        | add_ln125_53   | add  | fabric    | 0       |
+|    add_ln125_54_fu_1906_p2                                                 |     |        | add_ln125_54   | add  | fabric    | 0       |
+|    add_ln125_55_fu_1916_p2                                                 |     |        | add_ln125_55   | add  | fabric    | 0       |
+|    add_ln125_56_fu_1930_p2                                                 |     |        | add_ln125_56   | add  | fabric    | 0       |
+|    add_ln125_57_fu_1961_p2                                                 |     |        | add_ln125_57   | add  | fabric    | 0       |
+|    add_ln125_58_fu_1971_p2                                                 |     |        | add_ln125_58   | add  | fabric    | 0       |
+|    add_ln125_59_fu_1982_p2                                                 |     |        | add_ln125_59   | add  | fabric    | 0       |
+|    add_ln125_60_fu_1992_p2                                                 |     |        | add_ln125_60   | add  | fabric    | 0       |
+|    add_ln125_61_fu_2013_p2                                                 |     |        | add_ln125_61   | add  | fabric    | 0       |
+|    add_ln125_62_fu_2023_p2                                                 |     |        | add_ln125_62   | add  | fabric    | 0       |
+|    add_ln125_63_fu_2033_p2                                                 |     |        | add_ln125_63   | add  | fabric    | 0       |
+|    add_ln125_64_fu_2043_p2                                                 |     |        | add_ln125_64   | add  | fabric    | 0       |
+|    add_ln125_65_fu_2063_p2                                                 |     |        | add_ln125_65   | add  | fabric    | 0       |
+|    add_ln125_66_fu_2073_p2                                                 |     |        | add_ln125_66   | add  | fabric    | 0       |
+|    add_ln125_67_fu_2083_p2                                                 |     |        | add_ln125_67   | add  | fabric    | 0       |
+|    add_ln125_68_fu_2093_p2                                                 |     |        | add_ln125_68   | add  | fabric    | 0       |
+|    add_ln125_69_fu_2113_p2                                                 |     |        | add_ln125_69   | add  | fabric    | 0       |
+|    add_ln125_70_fu_2123_p2                                                 |     |        | add_ln125_70   | add  | fabric    | 0       |
+|    add_ln125_71_fu_2133_p2                                                 |     |        | add_ln125_71   | add  | fabric    | 0       |
+|    add_ln125_72_fu_2143_p2                                                 |     |        | add_ln125_72   | add  | fabric    | 0       |
+|    add_ln125_73_fu_2163_p2                                                 |     |        | add_ln125_73   | add  | fabric    | 0       |
+|    add_ln125_74_fu_2173_p2                                                 |     |        | add_ln125_74   | add  | fabric    | 0       |
+|    add_ln125_75_fu_2183_p2                                                 |     |        | add_ln125_75   | add  | fabric    | 0       |
+|    add_ln125_76_fu_2193_p2                                                 |     |        | add_ln125_76   | add  | fabric    | 0       |
+|    add_ln127_1_fu_1823_p2                                                  |     |        | add_ln127_1    | add  | fabric    | 0       |
+|    add_ln127_fu_1832_p2                                                    |     |        | add_ln127      | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_5_loop_for_channel_pad_5            | 1   |        |                |      |           |         |
+|    add_ln133_fu_122_p2                                                     |     |        | add_ln133      | add  | fabric    | 0       |
+|    add_ln133_1_fu_148_p2                                                   |     |        | add_ln133_1    | add  | fabric    | 0       |
+|    mac_muladd_5ns_7ns_7ns_11_4_1_U67                                       | 1   |        | empty          | mul  | dsp_slice | 3       |
+|    mac_muladd_5ns_7ns_7ns_11_4_1_U67                                       | 1   |        | add_ln136      | add  | dsp_slice | 3       |
+|    add_ln136_3_fu_246_p2                                                   |     |        | add_ln136_3    | add  | fabric    | 0       |
+|    add_ln135_fu_186_p2                                                     |     |        | add_ln135      | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_143_1_loop_for_ap_5_loop_for_fc_5_loop_for_fa_5 | 1   |        |                |      |           |         |
+|    add_ln143_fu_247_p2                                                     |     |        | add_ln143      | add  | fabric    | 0       |
+|    add_ln143_1_fu_292_p2                                                   |     |        | add_ln143_1    | add  | fabric    | 0       |
+|    add_ln145_fu_521_p2                                                     |     |        | add_ln145      | add  | fabric    | 0       |
+|    add_ln148_fu_344_p2                                                     |     |        | add_ln148      | add  | fabric    | 0       |
+|    empty_151_fu_406_p2                                                     |     |        | empty_151      | add  | fabric    | 0       |
+|    arrayidx37_sum_fu_617_p2                                                |     |        | arrayidx37_sum | add  | fabric    | 0       |
+|    mac_muladd_5ns_7ns_7ns_11_4_1_U74                                       | 1   |        | mul_ln150      | mul  | dsp_slice | 3       |
+|    add_ln151_fu_436_p2                                                     |     |        | add_ln151      | add  | fabric    | 0       |
+|    add_ln151_1_fu_462_p2                                                   |     |        | add_ln151_1    | add  | fabric    | 0       |
+|    add_ln151_5_fu_541_p2                                                   |     |        | add_ln151_5    | add  | fabric    | 0       |
+|    mac_muladd_5ns_7ns_7ns_11_4_1_U74                                       | 1   |        | add_ln151_3    | add  | dsp_slice | 3       |
+|    add_ln150_fu_473_p2                                                     |     |        | add_ln150      | add  | fabric    | 0       |
+|    add_ln153_fu_551_p2                                                     |     |        | add_ln153      | add  | fabric    | 0       |
+|    add_ln148_1_fu_565_p2                                                   |     |        | add_ln148_1    | add  | fabric    | 0       |
+|    add_ln145_1_fu_577_p2                                                   |     |        | add_ln145_1    | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_channel_pool_2_loop_for_weight_pool_2             | 0   |        |                |      |           |         |
+|    add_ln50_fu_155_p2                                                      |     |        | add_ln50       | add  | fabric    | 0       |
+|    add_ln50_1_fu_181_p2                                                    |     |        | add_ln50_1     | add  | fabric    | 0       |
+|    empty_132_fu_223_p2                                                     |     |        | empty_132      | add  | fabric    | 0       |
+|    add_ln57_fu_241_p2                                                      |     |        | add_ln57       | add  | fabric    | 0       |
+|    add_ln57_1_fu_258_p2                                                    |     |        | add_ln57_1     | add  | fabric    | 0       |
+|    add_ln61_1_fu_452_p2                                                    |     |        | add_ln61_1     | add  | fabric    | 0       |
+|    add_ln61_fu_462_p2                                                      |     |        | add_ln61       | add  | fabric    | 0       |
+|    add_ln63_fu_264_p2                                                      |     |        | add_ln63       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_6_loop_for_channel_pad_6            | 1   |        |                |      |           |         |
+|    add_ln159_fu_120_p2                                                     |     |        | add_ln159      | add  | fabric    | 0       |
+|    add_ln159_1_fu_146_p2                                                   |     |        | add_ln159_1    | add  | fabric    | 0       |
+|    mac_muladd_5ns_6ns_6ns_10_4_1_U82                                       | 1   |        | empty          | mul  | dsp_slice | 3       |
+|    mac_muladd_5ns_6ns_6ns_10_4_1_U82                                       | 1   |        | add_ln162      | add  | dsp_slice | 3       |
+|    add_ln162_3_fu_244_p2                                                   |     |        | add_ln162_3    | add  | fabric    | 0       |
+|    add_ln161_fu_184_p2                                                     |     |        | add_ln161      | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_169_1_loop_for_ap_6_loop_for_fc_6_loop_for_fa_6 | 1   |        |                |      |           |         |
+|    add_ln169_fu_249_p2                                                     |     |        | add_ln169      | add  | fabric    | 0       |
+|    add_ln169_1_fu_294_p2                                                   |     |        | add_ln169_1    | add  | fabric    | 0       |
+|    add_ln171_fu_527_p2                                                     |     |        | add_ln171      | add  | fabric    | 0       |
+|    add_ln174_fu_346_p2                                                     |     |        | add_ln174      | add  | fabric    | 0       |
+|    arrayidx45_sum_fu_614_p2                                                |     |        | arrayidx45_sum | add  | fabric    | 0       |
+|    mac_muladd_5ns_6ns_6ns_10_4_1_U89                                       | 1   |        | mul_ln176      | mul  | dsp_slice | 3       |
+|    add_ln177_fu_432_p2                                                     |     |        | add_ln177      | add  | fabric    | 0       |
+|    add_ln177_2_fu_442_p2                                                   |     |        | add_ln177_2    | add  | fabric    | 0       |
+|    add_ln177_1_fu_468_p2                                                   |     |        | add_ln177_1    | add  | fabric    | 0       |
+|    add_ln177_6_fu_543_p2                                                   |     |        | add_ln177_6    | add  | fabric    | 0       |
+|    mac_muladd_5ns_6ns_6ns_10_4_1_U89                                       | 1   |        | add_ln177_3    | add  | dsp_slice | 3       |
+|    add_ln176_fu_479_p2                                                     |     |        | add_ln176      | add  | fabric    | 0       |
+|    add_ln179_1_fu_700_p2                                                   |     |        | add_ln179_1    | add  | fabric    | 0       |
+|    add_ln179_fu_710_p2                                                     |     |        | add_ln179      | add  | fabric    | 0       |
+|    add_ln174_1_fu_562_p2                                                   |     |        | add_ln174_1    | add  | fabric    | 0       |
+|    add_ln171_1_fu_574_p2                                                   |     |        | add_ln171_1    | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_3_channel_pad_7_loop_for_channel_pad_7            | 1   |        |                |      |           |         |
+|    add_ln185_fu_118_p2                                                     |     |        | add_ln185      | add  | fabric    | 0       |
+|    add_ln185_1_fu_144_p2                                                   |     |        | add_ln185_1    | add  | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_11_4_1_U93                                       | 1   |        | empty          | mul  | dsp_slice | 3       |
+|    mac_muladd_6ns_6ns_6ns_11_4_1_U93                                       | 1   |        | add_ln188      | add  | dsp_slice | 3       |
+|    add_ln188_3_fu_242_p2                                                   |     |        | add_ln188_3    | add  | fabric    | 0       |
+|    add_ln187_fu_182_p2                                                     |     |        | add_ln187      | add  | fabric    | 0       |
+|  + CNN_Pipeline_VITIS_LOOP_195_1_loop_for_ap_7_loop_for_fc_7_loop_for_fa_7 | 1   |        |                |      |           |         |
+|    add_ln195_fu_245_p2                                                     |     |        | add_ln195      | add  | fabric    | 0       |
+|    add_ln195_1_fu_301_p2                                                   |     |        | add_ln195_1    | add  | fabric    | 0       |
+|    add_ln197_fu_315_p2                                                     |     |        | add_ln197      | add  | fabric    | 0       |
+|    add_ln200_fu_367_p2                                                     |     |        | add_ln200      | add  | fabric    | 0       |
+|    arrayidx51_sum_fu_648_p2                                                |     |        | arrayidx51_sum | add  | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_11_4_1_U100                                      | 1   |        | mul_ln202      | mul  | dsp_slice | 3       |
+|    add_ln203_fu_477_p2                                                     |     |        | add_ln203      | add  | fabric    | 0       |
+|    add_ln203_2_fu_487_p2                                                   |     |        | add_ln203_2    | add  | fabric    | 0       |
+|    add_ln203_1_fu_513_p2                                                   |     |        | add_ln203_1    | add  | fabric    | 0       |
+|    add_ln203_6_fu_524_p2                                                   |     |        | add_ln203_6    | add  | fabric    | 0       |
+|    mac_muladd_6ns_6ns_6ns_11_4_1_U100                                      | 1   |        | add_ln203_3    | add  | dsp_slice | 3       |
+|    add_ln202_fu_530_p2                                                     |     |        | add_ln202      | add  | fabric    | 0       |
+|    add_ln205_1_fu_548_p2                                                   |     |        | add_ln205_1    | add  | fabric    | 0       |
+|    add_ln205_fu_558_p2                                                     |     |        | add_ln205      | add  | fabric    | 0       |
+|    add_ln200_1_fu_596_p2                                                   |     |        | add_ln200_1    | add  | fabric    | 0       |
+|    add_ln197_1_fu_608_p2                                                   |     |        | add_ln197_1    | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_channel_pool_3_loop_for_weight_pool_3             | 0   |        |                |      |           |         |
+|    add_ln72_fu_157_p2                                                      |     |        | add_ln72       | add  | fabric    | 0       |
+|    add_ln72_1_fu_183_p2                                                    |     |        | add_ln72_1     | add  | fabric    | 0       |
+|    empty_131_fu_225_p2                                                     |     |        | empty_131      | add  | fabric    | 0       |
+|    add_ln79_fu_243_p2                                                      |     |        | add_ln79       | add  | fabric    | 0       |
+|    add_ln79_1_fu_260_p2                                                    |     |        | add_ln79_1     | add  | fabric    | 0       |
+|    add_ln83_fu_454_p2                                                      |     |        | add_ln83       | add  | fabric    | 0       |
+|    add_ln83_1_fu_464_p2                                                    |     |        | add_ln83_1     | add  | fabric    | 0       |
+|    add_ln85_fu_266_p2                                                      |     |        | add_ln85       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_channel_gap_4                                     | 28  |        |                |      |           |         |
+|    add_ln92_fu_526_p2                                                      |     |        | add_ln92       | add  | fabric    | 0       |
+|    empty_134_fu_560_p2                                                     |     |        | empty_134      | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U110                                     | 2   |        | pool_value_2   | fadd | fulldsp   | 3       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U111                                     | 2   |        | pool_value_3   | fadd | fulldsp   | 3       |
+|    add_ln97_fu_604_p2                                                      |     |        | add_ln97       | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U112                                     | 2   |        | pool_value_4   | fadd | fulldsp   | 3       |
+|    add_ln97_1_fu_615_p2                                                    |     |        | add_ln97_1     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U113                                     | 2   |        | pool_value_5   | fadd | fulldsp   | 3       |
+|    add_ln97_2_fu_626_p2                                                    |     |        | add_ln97_2     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U114                                     | 2   |        | pool_value_6   | fadd | fulldsp   | 3       |
+|    add_ln97_3_fu_637_p2                                                    |     |        | add_ln97_3     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U115                                     | 2   |        | pool_value_7   | fadd | fulldsp   | 3       |
+|    add_ln97_4_fu_648_p2                                                    |     |        | add_ln97_4     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U116                                     | 2   |        | pool_value_8   | fadd | fulldsp   | 3       |
+|    add_ln97_5_fu_659_p2                                                    |     |        | add_ln97_5     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U117                                     | 2   |        | pool_value_9   | fadd | fulldsp   | 3       |
+|    add_ln97_6_fu_670_p2                                                    |     |        | add_ln97_6     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U118                                     | 2   |        | pool_value_10  | fadd | fulldsp   | 3       |
+|    add_ln97_7_fu_681_p2                                                    |     |        | add_ln97_7     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U119                                     | 2   |        | pool_value_11  | fadd | fulldsp   | 3       |
+|    add_ln97_8_fu_692_p2                                                    |     |        | add_ln97_8     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U120                                     | 2   |        | pool_value_12  | fadd | fulldsp   | 3       |
+|    add_ln97_9_fu_703_p2                                                    |     |        | add_ln97_9     | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U121                                     | 2   |        | pool_value_13  | fadd | fulldsp   | 3       |
+|    add_ln97_10_fu_714_p2                                                   |     |        | add_ln97_10    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U122                                     | 2   |        | pool_value_14  | fadd | fulldsp   | 3       |
+|    add_ln97_11_fu_725_p2                                                   |     |        | add_ln97_11    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U123                                     | 2   |        | pool_value_15  | fadd | fulldsp   | 3       |
+|    add_ln97_12_fu_741_p2                                                   |     |        | add_ln97_12    | add  | fabric    | 0       |
+|    add_ln97_13_fu_751_p2                                                   |     |        | add_ln97_13    | add  | fabric    | 0       |
+|    add_ln97_14_fu_761_p2                                                   |     |        | add_ln97_14    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U110                                     | 2   |        | pool_value_18  | fadd | fulldsp   | 3       |
+|    add_ln97_15_fu_771_p2                                                   |     |        | add_ln97_15    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U111                                     | 2   |        | pool_value_19  | fadd | fulldsp   | 3       |
+|    add_ln97_16_fu_781_p2                                                   |     |        | add_ln97_16    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U112                                     | 2   |        | pool_value_20  | fadd | fulldsp   | 3       |
+|    add_ln97_17_fu_791_p2                                                   |     |        | add_ln97_17    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U113                                     | 2   |        | pool_value_21  | fadd | fulldsp   | 3       |
+|    add_ln97_18_fu_801_p2                                                   |     |        | add_ln97_18    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U114                                     | 2   |        | pool_value_22  | fadd | fulldsp   | 3       |
+|    add_ln97_19_fu_811_p2                                                   |     |        | add_ln97_19    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U115                                     | 2   |        | pool_value_23  | fadd | fulldsp   | 3       |
+|    add_ln97_20_fu_821_p2                                                   |     |        | add_ln97_20    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U116                                     | 2   |        | pool_value_24  | fadd | fulldsp   | 3       |
+|    add_ln97_21_fu_831_p2                                                   |     |        | add_ln97_21    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U117                                     | 2   |        | pool_value_25  | fadd | fulldsp   | 3       |
+|    add_ln97_22_fu_841_p2                                                   |     |        | add_ln97_22    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U118                                     | 2   |        | pool_value_26  | fadd | fulldsp   | 3       |
+|    add_ln97_23_fu_851_p2                                                   |     |        | add_ln97_23    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U119                                     | 2   |        | pool_value_27  | fadd | fulldsp   | 3       |
+|    add_ln97_24_fu_861_p2                                                   |     |        | add_ln97_24    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U120                                     | 2   |        | pool_value_28  | fadd | fulldsp   | 3       |
+|    add_ln97_25_fu_871_p2                                                   |     |        | add_ln97_25    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U121                                     | 2   |        | pool_value_29  | fadd | fulldsp   | 3       |
+|    add_ln97_26_fu_881_p2                                                   |     |        | add_ln97_26    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U122                                     | 2   |        | pool_value_30  | fadd | fulldsp   | 3       |
+|    add_ln97_27_fu_891_p2                                                   |     |        | add_ln97_27    | add  | fabric    | 0       |
+|    fadd_32ns_32ns_32_4_full_dsp_1_U123                                     | 2   |        | pool_value_31  | fadd | fulldsp   | 3       |
+|  + CNN_Pipeline_loop_for_a_Dense_0                                         | 0   |        |                |      |           |         |
+|    add_ln3_fu_747_p2                                                       |     |        | add_ln3        | add  | fabric    | 0       |
+|    add_ln7_fu_757_p2                                                       |     |        | add_ln7        | add  | fabric    | 0       |
+|    add_ln7_1_fu_768_p2                                                     |     |        | add_ln7_1      | add  | fabric    | 0       |
+|    add_ln7_2_fu_784_p2                                                     |     |        | add_ln7_2      | add  | fabric    | 0       |
+|    add_ln7_3_fu_794_p2                                                     |     |        | add_ln7_3      | add  | fabric    | 0       |
+|    add_ln7_4_fu_814_p2                                                     |     |        | add_ln7_4      | add  | fabric    | 0       |
+|    add_ln7_5_fu_846_p2                                                     |     |        | add_ln7_5      | add  | fabric    | 0       |
+|    add_ln7_6_fu_856_p2                                                     |     |        | add_ln7_6      | add  | fabric    | 0       |
+|    add_ln7_7_fu_876_p2                                                     |     |        | add_ln7_7      | add  | fabric    | 0       |
+|    add_ln7_8_fu_886_p2                                                     |     |        | add_ln7_8      | add  | fabric    | 0       |
+|    add_ln7_9_fu_906_p2                                                     |     |        | add_ln7_9      | add  | fabric    | 0       |
+|    add_ln7_10_fu_916_p2                                                    |     |        | add_ln7_10     | add  | fabric    | 0       |
+|    add_ln7_11_fu_936_p2                                                    |     |        | add_ln7_11     | add  | fabric    | 0       |
+|    add_ln7_12_fu_968_p2                                                    |     |        | add_ln7_12     | add  | fabric    | 0       |
+|    add_ln7_13_fu_978_p2                                                    |     |        | add_ln7_13     | add  | fabric    | 0       |
+|    add_ln7_14_fu_998_p2                                                    |     |        | add_ln7_14     | add  | fabric    | 0       |
+|    add_ln7_15_fu_1008_p2                                                   |     |        | add_ln7_15     | add  | fabric    | 0       |
+|    add_ln7_16_fu_1028_p2                                                   |     |        | add_ln7_16     | add  | fabric    | 0       |
+|    add_ln7_17_fu_1038_p2                                                   |     |        | add_ln7_17     | add  | fabric    | 0       |
+|    add_ln7_18_fu_1058_p2                                                   |     |        | add_ln7_18     | add  | fabric    | 0       |
+|    add_ln7_19_fu_1090_p2                                                   |     |        | add_ln7_19     | add  | fabric    | 0       |
+|    add_ln7_20_fu_1100_p2                                                   |     |        | add_ln7_20     | add  | fabric    | 0       |
+|    add_ln7_21_fu_1120_p2                                                   |     |        | add_ln7_21     | add  | fabric    | 0       |
+|    add_ln7_22_fu_1130_p2                                                   |     |        | add_ln7_22     | add  | fabric    | 0       |
+|    add_ln7_23_fu_1150_p2                                                   |     |        | add_ln7_23     | add  | fabric    | 0       |
+|    add_ln7_24_fu_1160_p2                                                   |     |        | add_ln7_24     | add  | fabric    | 0       |
+|    add_ln7_25_fu_1180_p2                                                   |     |        | add_ln7_25     | add  | fabric    | 0       |
+|    add_ln7_26_fu_1212_p2                                                   |     |        | add_ln7_26     | add  | fabric    | 0       |
+|    add_ln7_27_fu_1222_p2                                                   |     |        | add_ln7_27     | add  | fabric    | 0       |
+|    add_ln9_fu_1252_p2                                                      |     |        | add_ln9        | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_for_a_Dense_1                                         | 0   |        |                |      |           |         |
+|    add_ln15_fu_521_p2                                                      |     |        | add_ln15       | add  | fabric    | 0       |
+|    add_ln19_fu_544_p2                                                      |     |        | add_ln19       | add  | fabric    | 0       |
+|    add_ln19_1_fu_560_p2                                                    |     |        | add_ln19_1     | add  | fabric    | 0       |
+|    add_ln19_2_fu_570_p2                                                    |     |        | add_ln19_2     | add  | fabric    | 0       |
+|    add_ln19_3_fu_590_p2                                                    |     |        | add_ln19_3     | add  | fabric    | 0       |
+|    add_ln19_4_fu_600_p2                                                    |     |        | add_ln19_4     | add  | fabric    | 0       |
+|    add_ln19_5_fu_620_p2                                                    |     |        | add_ln19_5     | add  | fabric    | 0       |
+|    add_ln19_6_fu_630_p2                                                    |     |        | add_ln19_6     | add  | fabric    | 0       |
+|    add_ln19_7_fu_662_p2                                                    |     |        | add_ln19_7     | add  | fabric    | 0       |
+|    add_ln19_8_fu_682_p2                                                    |     |        | add_ln19_8     | add  | fabric    | 0       |
+|    add_ln19_9_fu_692_p2                                                    |     |        | add_ln19_9     | add  | fabric    | 0       |
+|    add_ln19_10_fu_712_p2                                                   |     |        | add_ln19_10    | add  | fabric    | 0       |
+|    add_ln19_11_fu_722_p2                                                   |     |        | add_ln19_11    | add  | fabric    | 0       |
+|    add_ln19_12_fu_742_p2                                                   |     |        | add_ln19_12    | add  | fabric    | 0       |
+|    add_ln19_13_fu_752_p2                                                   |     |        | add_ln19_13    | add  | fabric    | 0       |
+|    add_ln19_14_fu_784_p2                                                   |     |        | add_ln19_14    | add  | fabric    | 0       |
+|    add_ln19_15_fu_804_p2                                                   |     |        | add_ln19_15    | add  | fabric    | 0       |
+|    add_ln19_16_fu_814_p2                                                   |     |        | add_ln19_16    | add  | fabric    | 0       |
+|    add_ln21_fu_844_p2                                                      |     |        | add_ln21       | add  | fabric    | 0       |
+|  + CNN_Pipeline_loop_detect                                                | 0   |        |                |      |           |         |
+|    add_ln26_fu_121_p2                                                      |     |        | add_ln26       | add  | fabric    | 0       |
++----------------------------------------------------------------------------+-----+--------+----------------+------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------+---------------+------+------+------+--------+-------------+------+---------+------------------+
+| Name                                  | Usage         | Type | BRAM | URAM | Pragma | Variable    | Impl | Latency | Bitwidth, Depth, |
+|                                       |               |      |      |      |        |             |      |         | Banks            |
++---------------------------------------+---------------+------+------+------+--------+-------------+------+---------+------------------+
+| + CNN                                 |               |      | 94   | 0    |        |             |      |         |                  |
+|   out_Dense_U                         | ram_1p array  |      |      |      |        | out_Dense   | auto | 1       | 32, 5, 1         |
+|   OutPadConv0_U                       | rom_np array  |      | 2    |      |        | OutPadConv0 | auto | 1       | 32, 324, 1       |
+|   OutConv0_U                          | ram_1p array  |      | 4    |      |        | OutConv0    | auto | 1       | 32, 1280, 1      |
+|   OutPadConv1_U                       | rom_np array  |      | 4    |      |        | OutPadConv1 | auto | 1       | 32, 1296, 1      |
+|   OutConv1_U                          | ram_s2p array |      | 4    |      |        | OutConv1    | auto | 1       | 32, 1280, 1      |
+|   OutPool0_U                          | ram_1p array  |      | 2    |      |        | OutPool0    | auto | 1       | 32, 640, 1       |
+|   OutPadConv2_U                       | rom_np array  |      | 2    |      |        | OutPadConv2 | auto | 1       | 32, 656, 1       |
+|   OutConv2_U                          | ram_1p array  |      | 4    |      |        | OutConv2    | auto | 1       | 32, 1280, 1      |
+|   OutPadConv3_U                       | rom_np array  |      | 4    |      |        | OutPadConv3 | auto | 1       | 32, 1312, 1      |
+|   OutConv3_U                          | ram_s2p array |      | 4    |      |        | OutConv3    | auto | 1       | 32, 1280, 1      |
+|   OutPool1_U                          | ram_1p array  |      | 2    |      |        | OutPool1    | auto | 1       | 32, 640, 1       |
+|   OutPadConv4_U                       | rom_np array  |      | 2    |      |        | OutPadConv4 | auto | 1       | 32, 672, 1       |
+|   OutConv4_U                          | ram_1p array  |      | 4    |      |        | OutConv4    | auto | 1       | 32, 1280, 1      |
+|   fadd_32ns_32ns_32_4_full_dsp_1_U198 | ram_1p array  |      | 4    |      |        | OutPadConv5 | auto | 1       | 32, 1344, 1      |
+|   OutConv5_U                          | ram_s2p array |      | 4    |      |        | OutConv5    | auto | 1       | 32, 1280, 1      |
+|   OutPool2_U                          | ram_1p array  |      | 2    |      |        | OutPool2    | auto | 1       | 32, 640, 1       |
+|   OutPadConv6_U                       | ram_1p array  |      | 2    |      |        | OutPadConv6 | auto | 1       | 32, 704, 1       |
+|   OutConv6_U                          | ram_1p array  |      | 4    |      |        | OutConv6    | auto | 1       | 32, 1280, 1      |
+|   fadd_32ns_32ns_32_4_full_dsp_1_U199 | ram_1p array  |      | 4    |      |        | OutPadConv7 | auto | 1       | 32, 1408, 1      |
+|   OutConv7_U                          | ram_s2p array |      | 4    |      |        | OutConv7    | auto | 1       | 32, 1280, 1      |
+|   OutPool3_U                          | rom_np array  |      | 2    |      |        | OutPool3    | auto | 1       | 32, 640, 1       |
+|   OutGAP4_U                           | ram_s2p array |      | 2    |      |        | OutGAP4     | auto | 1       | 32, 32, 1        |
+|   OutDense0_U                         | ram_s2p array |      |      |      |        | OutDense0   | auto | 1       | 32, 20, 1        |
++---------------------------------------+---------------+------+------+------+--------+-------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

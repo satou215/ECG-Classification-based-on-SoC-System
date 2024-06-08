@@ -1,0 +1,30 @@
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30134:2: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 11065; i++){
+ ^~~
+ VITIS_LOOP_20_1: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30134:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30142:2: warning: Added loop label VITIS_LOOP_28_2:   [xilinx-label-all-loops]
+ for (int i = 0; i < 15009 * 1 * 1 * 320; i++){
+ ^~~
+ VITIS_LOOP_28_2: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30142:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30150:2: warning: Added loop label VITIS_LOOP_36_3:   [xilinx-label-all-loops]
+ for (int i = 0; i < 15009 ; i++)
+ ^~~
+ VITIS_LOOP_36_3: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30150:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30158:2: warning: Added loop label VITIS_LOOP_44_4:   [xilinx-label-all-loops]
+ for (int i = 0; i < 15009 ; i++)
+ ^~~
+ VITIS_LOOP_44_4: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30158:2: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30161:3: warning: Added loop label VITIS_LOOP_47_5:   [xilinx-label-all-loops]
+  for (int k = 0; k < 1 * 320 * 1; k++)
+  ^~~
+  VITIS_LOOP_47_5: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30161:3: note: FIX-IT applied suggested code changes
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30169:2: warning: Added loop label VITIS_LOOP_55_6:   [xilinx-label-all-loops]
+ for (int i = 0; i < 15009; i++)
+ ^~~
+ VITIS_LOOP_55_6: 
+F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\CNN_tb.pp.0.cpp:30169:2: note: FIX-IT applied suggested code changes

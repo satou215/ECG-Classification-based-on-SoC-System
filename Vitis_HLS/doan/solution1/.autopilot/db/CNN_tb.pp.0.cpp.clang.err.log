@@ -1,0 +1,4 @@
+CNN_tb.cpp:14:9: warning: unknown pragma ignored [-Winvalid-hls-pragmas]
+#pragma warning(disable : 4996)
+        ^
+1 warning generated.

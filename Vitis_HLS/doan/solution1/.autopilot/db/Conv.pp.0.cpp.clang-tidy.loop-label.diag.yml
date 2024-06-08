@@ -1,0 +1,76 @@
+---
+MainSourceFile:  'F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/.autopilot/db/Conv.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_13_1:  '
+    FileOffset:      13
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          10079
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_13_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          10904
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_65_1:  '
+    FileOffset:      65
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          11727
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_65_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          12553
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_1:  '
+    FileOffset:      117
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          13372
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_1:  '
+    FileOffset:      143
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          14193
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_1:  '
+    FileOffset:      169
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          15013
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_1:  '
+    FileOffset:      195
+    FilePath:        Conv.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Conv.pp.0.cpp'
+        Offset:          15836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_1: '
+...

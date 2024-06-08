@@ -1,0 +1,49 @@
+---
+MainSourceFile:  'F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/.autopilot/db/Pool.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        Pool.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp'
+        Offset:          9896
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_33_1:  '
+    FileOffset:      33
+    FilePath:        Pool.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp'
+        Offset:          10457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_33_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_55_1:  '
+    FileOffset:      55
+    FilePath:        Pool.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp'
+        Offset:          11018
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_55_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_1:  '
+    FileOffset:      77
+    FilePath:        Pool.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp'
+        Offset:          11578
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_1:  '
+    FileOffset:      95
+    FilePath:        Pool.cpp
+    Replacements:    
+      - FilePath:        'F:\Ky2nam3\do_an_1\code\doan1\doan\solution1\.autopilot\db\Pool.pp.0.cpp'
+        Offset:          12084
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_1: '
+...

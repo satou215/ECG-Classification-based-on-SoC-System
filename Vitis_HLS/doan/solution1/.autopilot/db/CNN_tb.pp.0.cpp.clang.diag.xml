@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>F:/Ky2nam3/do_an_1/code/doan1/doan/solution1/.autopilot/db/CNN_tb.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>CNN_tb.cpp</string>
+      <key>line</key>
+      <integer>14</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>unknown pragma ignored</string>
+      <key>ID</key>
+      <integer>1017</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>
