@@ -1,0 +1,4 @@
+{
+    "backend": "tensorflow",
+    "image_data_format": "channels_first"
+}
