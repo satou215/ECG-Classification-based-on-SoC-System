@@ -1,0 +1,5 @@
+Vitis_HLS/doan/solution1/csim/build/signals1.txt filter=lfs diff=lfs merge=lfs -text
+Vitis_HLS/doan/solution1/sim/verilog/xsim.log filter=lfs diff=lfs merge=lfs -text
+Vitis_HLS/doan/solution1/sim/wrapc/signals1.txt filter=lfs diff=lfs merge=lfs -text
+Vitis_HLS/doan/solution1/sim/wrapc_pc/signals1.txt filter=lfs diff=lfs merge=lfs -text
+Vitis_HLS/signals1.txt filter=lfs diff=lfs merge=lfs -text
